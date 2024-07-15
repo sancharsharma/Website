@@ -1,0 +1,473 @@
+:root {
+	--sidebar-wid: 160px;
+	--timeline-col: DarkSlateBlue;
+	--timeline-bg: rgba(80,180,130,0.2);
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: var(--sidebar-wid); /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgba(190,190,190,0.0); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(145,30,145,0.5);
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: rgba(95,10,95,1);
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* End of sidebar */
+
+#canvas-image-blending {
+	margin-left: var(--sidebar-wid);
+	position: absolute; 
+	width: calc(100% - var(--sidebar-wid));
+	height: 450px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.img-props {
+	width: 100%;
+	height: auto;
+	position: relative;
+	text-align: center;
+	color: white;
+	border: 1px;
+}
+
+img {
+	height: auto;
+	width: 100%;
+	object-fit: cover;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	white-space: pre-line;
+}
+
+.bottomed {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-100%);
+}
+
+.main-content {
+  margin-left: var(--sidebar-wid);
+  width: 100% - var(--sidebar-wid);
+  min-width: 1100px;
+  max-width: 1500px;
+}
+
+.Publications {
+	width: 100%;
+	font-family: 'Rubik', sans-serif;
+}
+
+
+
+.header {
+  display: flex;
+}
+
+.work-header {
+  display: flex;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3.0rem;
+  font-weight: 700;
+  color: black;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 500;
+  color: black;
+}
+
+h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: black;
+}
+
+.time-text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: black;
+}
+
+.header-text {
+  width: 80%
+}
+
+.header-image {
+  width: 65%;
+  height: 65%;
+}
+
+.col {
+  padding-bottom: 30px;
+}
+
+.rounded-corners {
+  border-radius: 20px;
+  height: 300px;
+}
+
+.title-image {
+  border-radius: 20px;
+  width: 80%;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 3%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+.heading {
+	padding-bottom: 20px;
+	padding-top: 80px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 2.0rem;
+	font-weight: 500;
+	color: rgba(30,30,150,1);
+}
+
+
+/* STYLING: Introduction */
+
+.Intro {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 30px;
+	text-align: center;
+}
+
+.Intro_Text {
+	flex: 70%;
+	padding: 10px;
+	text-align: justify;
+}	
+
+.Intro_Image {
+	flex: 30%;
+	padding: 10px;
+	text-align: right;
+}
+
+/* STYLING: Timeline */
+
+.bg_head {
+	font-weight:400;
+	color: rgba(210,10,120,1);
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: var(--timeline-col);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: var(--timeline-col);
+  border: 4px solid LightSteelBlue;
+  top: 19.4px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -25%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 25%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--timeline-bg);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--timeline-bg) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: var(--timeline-bg);
+  position: relative;
+  border-radius: 6px;
+}
+
+/* END of: Timeline */
+
+/* STYLING: Research */
+
+.res {
+	display: flex;
+	flex-direction: row;
+}
+
+.res_sub {
+	flex: 25%;
+	background-color: rgba(20,90,20,1);
+	font-family: 'Rubik', sans-serif;
+	padding: 10px 10px;
+	position: relative;
+	font-size: 2.8rem;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+}
+
+.res_text {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.0rem;
+	font-weight: 100;
+	text-align: justify;
+	flex: 70%;
+	padding: 10px 10px;
+}
+
+
+/* END of: Research */
+
+/* STYLING: Contact me section */
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-paper-plane {
+  background: #3D348B;
+  color: white;
+}
+
+.fa-instagram {
+  background: #7678ED;
+  color: white;
+}
+
+.fa-github {
+  background: #0973fd;
+  color: white;
+}
+
+/* Styling for the progress bars */
+
+.progressbar {
+  height: 30px;
+  width: 20%;
+  background-color: #3D348B;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.inner-progressbar {
+  background-color: #7678ED;
+  height: 22px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-right: 4px;
+  color: white;
+  text-align: right;
+  font-size: 15px;
+}
+
+.italian {
+  width: 100%;
+}
+
+.english {
+  width: 100%;
+}
+
+.german {
+  width: 85%;
+}
+
+.mandarin {
+  width: 20%
+}
+
+@media only screen and (max-width: 550px) and (min-width: 200px){
+  .container-fluid {
+    align-content: center;
+  }
+
+  .header {
+    display: inline;
+    align-items: center;
+  }
+
+  .progressbar {
+    width: 60%;
+  }
+
+  .flex-container-reverse {
+    flex-direction: column-reverse;
+  }
+  
+  .big-container-left, .small-container-right {
+    flex: 100%;
+  }
+
+  .small-container-right {
+    text-align: center;
+  }
+
+  .big-container-right, .small-container-left {
+    flex: 100%;
+  }
+
+  .small-container-left {
+    text-align: center;
+  }
+}
+
+
