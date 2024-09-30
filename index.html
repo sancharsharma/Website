@@ -39,10 +39,14 @@
 	
 	
 	<div class="sidenav"> 
-		<a href=#Introduction>Introduction</a>
+		<!-- <a href=#Introduction>Introduction</a>
 		<a href=#Background>Background</a>
 		<a href=#Research>Research</a>
-		<a href=#ContactMe>Contact Me</a>
+		<a href=#ContactMe>Contact Me</a> -->
+		<button class="sidenav_text" onclick="ToScroll('Introduction')"> Introduction </button>
+		<button class="sidenav_text" onclick="ToScroll('Background')"> Background </button>
+		<button class="sidenav_text" onclick="ToScroll('Research')"> Research </button>
+		<button class="sidenav_text" onclick="ToScroll('ContactMe')"> Contact Me </button>
 	</div>
 	
 	<div class="main-content" style="text-align: center; position: absolute">
@@ -57,7 +61,7 @@
 		
 		<div style="padding: 5% 5%;">
 			<!-- Introduction -->
-			<h2 class="heading" style="padding-top: 80px;" id="Introduction">Introduction</h2>
+			<h2 class="heading" style="padding-top: 60px;" id="Introduction">Introduction</h2>
 			
 			<div class="Intro">
 				<div class="Intro_Text">
@@ -65,7 +69,7 @@
 					<p style="padding-bottom: 5px;"> I am interested in developing the field of quantum magnonics, with the eventual aim of using magnons for quantum applications such as interconnects, transduction, or logic. In the short term, this involves developing practical methods to study and manipulate quantum magnons, along with developing microscopic theories of magnetic materials. </p>
 					<p style="padding-bottom: 5px;"> You can find more details about my research on <a href="https://scholar.google.com/citations?user=UWxbm8oAAAAJ">Google Scholar</a>, <a href="https://orcid.org/0000-0001-9013-6208">Orcid</a>, and <a href="https://github.com/sancharsharma/">GitHub</a>. </p>
 				</div>
-				<div class="Intro_Image"> <img src="MyPhoto.jpg" class="title-image"></div>
+				<div class="Intro_Image"> <img src="assets/MyPhoto.jpg" class="title-image"></div>
 			</div>
 			
 			<!-- Background -->
@@ -144,8 +148,9 @@
 			<div class="res">	
 				<div class="res_text">
 					<h3> When magnon met photon </h3>
-					<p> Microwave to optical transduction is one of the most sought after application in quantum communication. Magnets are promising intermediaries for such a transduction because they couple very strongly with the microwaves, yet achieving a comparable coupling with optics remains a challenge. My work involves studying and enhancing this optomagnonic coupling, particularly with the use of cavities. </p> 
+					<p> Microwave to optical transduction is one of the most sought after application in quantum communication. Magnets are promising intermediaries for such a transduction because they couple very strongly with the microwaves, although achieving a comparable coupling with optics remains a challenge. My work involves studying and enhancing this optomagnonic coupling, particularly with the use of cavities. </p> 
 					<span id="OM_list">  <ol>
+					<li> <em> Cavity-Enhanced Optical Manipulation of Antiferromagnetic Magnon-Pairs </em> <br> TS Parvini, ALE R&#246mling <strong>SS</strong>, S Viola Kusminskiy, arXiv (2024) </li>
 					<li> <em> Design of an optomagnonic crystal: Towards optimal magnon-photon mode matching at the microscale </em> <br> J Graf, <strong>SS</strong>, H H&#252bl, S Viola Kusminskiy, Phys. Rev. Res. (2021) </li>
 					<li> <em> Coherent pumping of high-momentum magnons by light </em> <br> F &#352imi&#263, <strong>SS</strong>, YM Blanter, GEW Bauer, Phys. Rev. B (2020) </li>
 					<li> <em> Optimal mode matching in cavity optomagnonics </em> <br> <strong>SS</strong>, BZ Rameshti, YM Blanter, GEW Bauer, Phys. Rev. B (2020) </li>
@@ -153,7 +158,7 @@
 					<li> <em> Selection rules for cavity-enhanced Brillouin light scattering from magnetostatic modes </em> <br> JA Haigh, NJ Lambert, <strong>SS</strong>, YM Blanter, GEW Bauer, AJ Ramsay, Phys. Rev. B (2018) </li>
 					<li> <em> Light scattering by magnons in whispering gallery mode cavities </em> <br> <strong>SS</strong>, YM Blanter, GEW Bauer, Phys. Rev. B (2017) </li>
 					</ol> </span>
-					<button onclick="PubShowHide('OM_list','OM_button')" id="OM_button">Click to show relevant publications</button> <!-- For some reason, the first click does not correctly register that publist.style.display is 0! -->
+					<button onclick="PubShowHide('OM_list','OM_button')" id="OM_button">Click to show relevant publications</button> 
 				</div>
 				<div class="res_sub"> Cavity Opto-magnonics </div>
 			</div>
@@ -172,3 +177,4 @@
 </body>
 
 </html>
+
