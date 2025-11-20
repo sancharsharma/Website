@@ -51,6 +51,20 @@ function ToScroll(loc) {
 	Id.scrollIntoView();
 }
 
+
+function SummaryShowHide(summary, pap_title) {
+	var summ = document.getElementById(summary);
+	var title = document.getElementById(pap_title);
+
+	if (summ.style.display == "") {
+		summ.style.display = "block";
+		//pubbutton.innerHTML = "Click to hide the publication list";
+	} else {
+		summ.style.display = "";
+		//pubbutton.innerHTML = "Click to show relevant publications";
+	}
+}
+
 //BUTTON 1
 var modal1 = document.getElementById("modal1");
 
