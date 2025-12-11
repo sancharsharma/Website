@@ -58,10 +58,8 @@ function SummaryShowHide(summary, pap_title) {
 
 	if (summ.style.display == "") {
 		summ.style.display = "block";
-		//pubbutton.innerHTML = "Click to hide the publication list";
 	} else {
 		summ.style.display = "";
-		//pubbutton.innerHTML = "Click to show relevant publications";
 	}
 }
 
