@@ -217,7 +217,7 @@
 			</div>
 			<br>
 
-			<button onclick = "SummaryShowHide('QTomSum', 'QTom')" class="paper-title" id="QTom" >    Quantum tomography of magnons using Brillouin light scattering </button> <button class="side-button" onclick="window.open('https://arxiv.org/abs/2311.10152');">[arXiv]</button> <button class="side-button" onclick="window.open('https://doi.org/10.1103/PhysRevB.110.014416');">[DOI]</button>
+			<button onclick = "SummaryShowHide('QTomSum', 'QTom')" class="paper-title" id="QTom" > Measuring magnons using light </button> <button class="side-button" onclick="window.open('https://arxiv.org/abs/2311.10152');">[arXiv]</button> <button class="side-button" onclick="window.open('https://doi.org/10.1103/PhysRevB.110.014416');">[DOI]</button>
 			<div class="paper-summary" id="QTomSum"> 
 				Every experiment ends in a measurement. So, if we want to unlock quantum applications using magnets, we need to answer a fundamental question: how can we measure the quantum states of <b>magnons</b>? <br>
 				The first step in measuring any system, whether it’s magnetic or not, is to connect it to something we already know how to measure. For magnets, I turned to optical photons. Why? Because we already have incredibly advanced tools to measure photons with quantum precision. Then, the idea is simple: if we can transfer information from magnons to photons, and then measure those photons, we can fully characterize the quantum state of the magnons. The process of fully characterizing a quantum state is called <b>quantum tomography</b>. <br>
@@ -232,6 +232,14 @@
 				In this work, I developed an algorithm that provides a set of operations needed to generate any <b>arbitrary quantum state of magnons</b>. Let’s see what the algorithm spits out for an example. Suppose you want to use magnons to sense extremely tiny magnetic fields. To do this, it turns out that they should be prepared in a strange quantum state: a superposition of having no magnons and having six magnons at the same time (let’s call this state 0+6). Simply injecting magnons into the system will get you to six magnons, but how do you create that superposition? <br>
 				The algorithm offers a neat solution. First, you inject magnons one by one until you have three magnons in the system. Then, you couple these magnons to another system that can exchange information with them. If you tune this coupling just right, there’s a 50-50 chance the system will either create a magnon or absorb one. This leaves you with a superposition of 2+4 magnons. Repeat this process two more times, and you end up with the 0+6 state you wanted. 
 			</div>
+		<br>
+
+			<button onclick = "SummaryShowHide('SkyrSum', 'Skyr')" class="paper-title" id="Skyr" >How to observe quantum skyrmions in magnets? </button> <button class="side-button" onclick="window.open('https://arxiv.org/abs/2506.16877');">[arXiv]</button> <button class="side-button" onclick="window.open('https://doi.org/10.1103/5c9q-nsb4');">[DOI]</button>
+			<div class="paper-summary" id="SkyrSum">
+		Magnetic skyrmions are tiny whirlpool-like patterns of magnetization in magnetic materials. Skyrmions have been predicted to show quantum behavior, opening the door to skyrmion-based elements for quantum information processing. However, this concept remains theoretical at present. The quantization of the helicity mode and the appearance of discrete energy levels remain to be observed. These are the key experimental milestones that would elevate the skyrmion from a classical information carrier to a solid-state qubit.<br>
+		Our theoretical research proposes a new experimental approach: shine a laser onto a skyrmion and analyze the light that scatters off it. It turns out that if the skyrmion behaves classically, the spectrum, i.e., the number of photons across different energies, will be symmetric around the input laser. But if the skyrmion exhibits quantum behavior, distinctive asymmetries will appear in this spectrum. These asymmetries can be controlled by adjusting the laser's power, making them easier to detect and measure.<br>
+		This work provides a concrete, achievable test for the quantum nature of skyrmions. By offering a clear experimental signature that distinguishes quantum from classical skyrmions, this research paves the way for confirming whether these magnetic structures truly operate in the quantum realm, advancing this new platform for implementing qubits.
+		</div>
 
 			<!-- Proposals -->
 			<h2 class="heading" id=Proposals>Proposals</h2>
