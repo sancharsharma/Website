@@ -1,7 +1,7 @@
 :root {
 	--sidebar-wid: 160px;
-	
-	/*Timeline variables*/;
+
+	/* Timeline variables */
 	--timeline-col: DarkSlateBlue;
 	--timeline-bg: rgba(80,180,130,0.2);
 	--bg-content-pad: 40px;
@@ -91,7 +91,7 @@
   color: #41403e;
   cursor: pointer;
   display: inline-block;
-  font-family: Neucha, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1rem;
   line-height: 8px; /* Used to control the height */
   outline: none;
@@ -118,13 +118,23 @@
 
 .twocolumn {
 	display: flex;
-	flex: 80%;
 }
 
 .column {
 	text-align: center;
-	width: 40%;
 	padding: 0px 15px;
+}
+
+.column:first-child { width: 35%; }
+.column:last-child  { width: 45%; }
+
+.twocolumn .paper-title,
+.twocolumn .paper-summary {
+	width: 100%;
+}
+
+.paper-links {
+    display: inline;
 }
 
 /* End of Summaries*/
@@ -135,7 +145,6 @@
 	position: relative;
 	text-align: center;
 	color: white;
-	border: 1px;
 }
 
 img {
@@ -149,7 +158,8 @@ img {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	white-space: pre-line;
+	white-space: nowrap;
+	color: white;
 }
 
 .bottomed {
@@ -158,6 +168,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
+    color: white;
 }
 
 #typewriter-text::after {
@@ -171,7 +182,7 @@ img {
 
 .main-content {
   margin-left: var(--sidebar-wid);
-  width: 100% - var(--sidebar-wid);
+  width: calc(100% - var(--sidebar-wid));
   min-width: 700px;
   max-width: 1500px;
 }
@@ -229,10 +240,22 @@ p {
 
 /* STYLING: Introduction */
 
+#Introduction {
+	padding-top: 60px;
+}
+
+.Intro_Text p {
+	padding-bottom: 5px;
+}
+
+.explanations-intro {
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
 .Intro {
 	display: flex;
 	flex-wrap: wrap;
-	font-size: 30px;
 	text-align: center;
 }
 
@@ -450,7 +473,8 @@ strong {
     color: black;
 }
 
-.fa {
+.fa,
+.contact-icons .ai {
     padding: 20px;
     font-size: 20px;
     display: inline-block;
@@ -459,8 +483,18 @@ strong {
     border-radius: 50%;
 }
 
-.fa:hover {
+.fa:hover,
+.contact-icons .ai:hover {
     opacity: 0.7;
+}
+
+.contact-icons .ai {
+    font-size: 21px;
+}
+
+.ai-orcid {
+    background: #A6CE39;
+    color: white;
 }
 
 .fa-envelope {
@@ -481,4 +515,178 @@ strong {
 .fa-github {
     background: #0973fd;
     color: white;
+}
+
+/* ── Mobile layout (phones and small tablets) ── */
+@media (max-width: 1024px) {
+
+    /* Sidebar becomes a sticky horizontal bar at the top */
+    .sidenav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgba(245, 245, 245, 0.97);
+        padding: 6px 0;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .sidenav_text {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    /* Remove the left margin that was reserved for the sidebar */
+    .main-content {
+        margin-left: 0;
+        min-width: unset;
+        width: 100%;
+    }
+
+    /* Keep section headings clear of the sticky nav bar when scrolled to */
+    .heading, #Introduction {
+        scroll-margin-top: 60px;
+    }
+
+    /* Crop the header image to a fixed height */
+    .img-props {
+        height: 220px;
+        overflow: hidden;
+    }
+
+    .img-props img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* Scale down the overlay text */
+    .centered {
+        font-size: 1.8rem;
+    }
+
+    .bottomed {
+        font-size: 0.85rem;
+    }
+
+    /* Stack intro text and photo vertically; photo floats up first */
+    .Intro {
+        flex-direction: column;
+    }
+
+    .Intro_Text,
+    .Intro_Image {
+        flex: 100%;
+    }
+
+    .Intro_Image {
+        order: -1;
+        text-align: center;
+    }
+
+    .title-image {
+        width: auto;
+        max-width: 280px;
+    }
+
+    /* Timeline: ruler visible on left, containers shifted right beside it */
+    .timeline::after {
+        left: 4px;
+        margin-left: 0;
+    }
+
+    .container {
+        width: 85%;
+        left: 0;
+        margin-left: 22px;
+        padding: 8px 12px;
+    }
+
+    /* Reposition circles so they sit on the left-side ruler */
+    .container::after {
+        left: -26px;
+        right: auto;
+    }
+
+    .right::after {
+        left: -26px;
+    }
+
+    /* Arrow: reposition to left edge of the container, pointing toward the ruler */
+    .right::before {
+        left: 0;
+    }
+
+    /* Stack research topic label and text vertically;
+       label (green box) always appears first regardless of DOM order */
+    .res {
+        flex-direction: column;
+    }
+
+    .res_sub,
+    .res_text {
+        flex: 100%;
+    }
+
+    .res_sub {
+        order: -1;
+    }
+
+    /* Stack the two-column explanation buttons vertically */
+    .twocolumn {
+        flex-direction: column;
+    }
+
+    .column:first-child,
+    .column:last-child {
+        width: 100%;
+    }
+
+    /* Make standalone paper titles and summaries full-width and centered */
+    .paper-title {
+        display: block;
+        width: 100%;
+    }
+
+    .paper-summary {
+        width: 100%;
+    }
+
+    .paper-entry {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paper-entry .paper-summary {
+        order: 2;
+    }
+
+    .paper-entry .paper-links {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 8px;
+    }
+
+    /* Two rows: emails on row 1, others on row 2 */
+    .contact-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    /* First two items (Institute Email, Gmail): half the row each */
+    .contact-icons .contact-item:nth-child(-n+2) {
+        flex: 0 0 44%;
+    }
+
+    /* Last three items (LinkedIn, ORCID, GitHub): a third each */
+    .contact-icons .contact-item:nth-child(n+3) {
+        flex: 0 0 28%;
+    }
 }

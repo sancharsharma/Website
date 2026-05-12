@@ -45,19 +45,19 @@
 
         <div class="img-props">
             <img src="MainImage.svg" alt="Header image">
-            <h1 class="centered" style="color: white; white-space: nowrap;">Hi, my name is<br>Sanchar Sharma</h1>
-            <p class="bottomed" style="color: white;" id="typewriter-text"></p>
+            <h1 class="centered">Hi, my name is<br>Sanchar Sharma</h1>
+            <p class="bottomed" id="typewriter-text"></p>
         </div>
 
         <div style="padding: 5% 5%;">
 
             <!-- Introduction -->
-            <h2 class="heading" style="padding-top: 60px;" id="Introduction">Introduction</h2>
+            <h2 class="heading" id="Introduction">Introduction</h2>
 
             <div class="Intro">
                 <div class="Intro_Text">
-                    <p style="padding-bottom: 5px;">I am a theoretical physicist, currently holding a junior group leader position in Madrid with a funding from the <a href="https://lacaixafoundation.org/en/">"la Caixa" foundation</a>.</p>
-                    <p style="padding-bottom: -5px;">My research focuses on the quantum dynamics of ferromagnets, with the long-term goal of harnessing their potential for quantum applications, such as interconnects, transduction, and logic operations. Under typical conditions, the collective excitations in ferromagnets can be described by magnons, which are quasiparticles representing either propagating or standing waves of spin excitations. I theoretically study the quantum properties of magnons and their interactions with other quantum systems, including microwaves and optical fields. A key aspect of my work is exploring how magnons can act as carriers of quantum information, offering new pathways for quantum communication, particularly in systems where devices are in close proximity. This involves both fundamental research on microscopic theories to describe magnon behavior and designing protocols for their quantum manipulation.</p>
+                    <p>I am a theoretical physicist, currently holding a junior group leader position in Madrid with a funding from the <a href="https://lacaixafoundation.org/en/">"la Caixa" foundation</a>.</p>
+                    <p>My research focuses on the quantum dynamics of ferromagnets, with the long-term goal of harnessing their potential for quantum applications, such as interconnects, transduction, and logic operations. Under typical conditions, the collective excitations in ferromagnets can be described by magnons, which are quasiparticles representing either propagating or standing waves of spin excitations. I theoretically study the quantum properties of magnons and their interactions with other quantum systems, including microwaves and optical fields. A key aspect of my work is exploring how magnons can act as carriers of quantum information, offering new pathways for quantum communication, particularly in systems where devices are in close proximity. This involves both fundamental research on microscopic theories to describe magnon behavior and designing protocols for their quantum manipulation.</p>
                 </div>
                 <div class="Intro_Image">
                     <img src="Sanchar_Pic.jpg" class="title-image" alt="Sanchar Sharma">
@@ -189,22 +189,20 @@
             <!-- Explanations -->
             <h2 class="heading" id="Explanations">Explanations</h2>
 
-            <div style="text-align: justify; margin-bottom: 20px; font-size: 1.2rem;">
-                Here are explanations of some of my research, which should be readable at an undergraduate level. Click to expand any topic or paper.
-            </div>
+            <p class="explanations-intro">Here are explanations of some of my research, which should be readable at an undergraduate level. Click to expand any topic or paper.</p>
 
             <div class="twocolumn">
-                <div class="column" style="width: 35%;">
-                    <button onclick="SummaryShowHide('MagSum', 'Mag')" class="paper-title" style="width: 100%;" id="Mag">What are magnons?</button>
-                    <div class="paper-summary" style="width: 100%;" id="MagSum">
+                <div class="column">
+                    <button onclick="SummaryShowHide('MagSum', 'Mag')" class="paper-title" id="Mag">What are magnons?</button>
+                    <div class="paper-summary" id="MagSum">
                         A ferromagnet has a large magnetic moment, because all the tiny electron spins inside it are aligned in the same direction, say north. Now, imagine if we somehow flip just one of those spins to point south. That lone spin would want to flip back to match its neighbors, but there's a problem: the total spin of the magnet mostly stays the same. It's not perfectly preserved, but it changes so slowly that for this argument, we can take it to be a constant.
                         So, if one spin flips from south to north, another spin must flip from north to south to keep the balance. This sets off a ripple of flipping spins moving through the magnet, just like electromagnetic waves move through free space. And just like electromagnetic waves are composed of photons, these spin waves are composed of particles that we call <b>magnons</b>.
                     </div>
                 </div>
 
-                <div class="column" style="width: 45%;">
-                    <button onclick="SummaryShowHide('QMagSum', 'QMag')" class="paper-title" style="width: 100%;" id="QMag">Why is quantum magnonics good?</button>
-                    <div class="paper-summary" style="width: 100%;" id="QMagSum">
+                <div class="column">
+                    <button onclick="SummaryShowHide('QMagSum', 'QMag')" class="paper-title" id="QMag">Why is quantum magnonics good?</button>
+                    <div class="paper-summary" id="QMagSum">
                         To make a real quantum computer, we physicists are always on the lookout for new materials that can bring unique strengths to the table. So, let me tell you what magnets, or rather magnons, offer.
                         Magnons are surprisingly friendly. They interact easily with many existing quantum technologies, which makes them perfect for connecting different parts of a quantum system, like shuttling information between memory and processors. They are also quite scalable spanning essentially every length scale, from millimeters down to nanometers, and across a huge range of frequencies, from gigahertz to terahertz. This flexibility means they could fit into a variety of devices.
                         But there are still challenges to overcome. While magnons dissipate far less energy than traditional electronics and most other materials, their losses are still a tad bit too high for delicate quantum operations. Also, we don't yet have full control over them. Overcoming these challenges could make magnets not just stick to your fridge, but also power computing.
@@ -213,34 +211,46 @@
             </div>
             <br>
 
-            <button onclick="SummaryShowHide('QTomSum', 'QTom')" class="paper-title" id="QTom">Measuring magnons using light</button>
-            <button class="side-button" onclick="window.open('https://arxiv.org/abs/2311.10152');">[arXiv]</button>
-            <button class="side-button" onclick="window.open('https://doi.org/10.1103/PhysRevB.110.014416');">[DOI]</button>
-            <div class="paper-summary" id="QTomSum">
-                Every experiment ends in a measurement. So, if we want to unlock quantum applications using magnets, we need to answer a fundamental question: how can we measure the quantum states of <b>magnons</b>?<br>
-                The first step in measuring any system, whether it's magnetic or not, is to connect it to something we already know how to measure. For magnets, I turned to optical photons. Why? Because we already have incredibly advanced tools to measure photons with quantum precision. Then, the idea is simple: if we can transfer information from magnons to photons, and then measure those photons, we can fully characterize the quantum state of the magnons. The process of fully characterizing a quantum state is called <b>quantum tomography</b>.<br>
-                So, can we transfer information from magnons to photons? That's where this process called <b>Brillouin light scattering</b> comes in. When a photon strikes a magnet, it can either absorb a magnon and gain energy or create a magnon and lose energy. Either way, the photon's frequency changes as it scatters, although not every photon will scatter. What's useful for us is that the number of scattered photons depends strongly on the phase of the photons (remember that photons are waves, just like everything else in this universe) and the quantum state of the magnons. By varying the phase of the photons and monitoring how many of them scatter, we can gather a lot of information about the magnons' quantum state.<br>
-                The actual task in this project was two-fold. First, to derive the precise relationship between the number of scattered photons, their phase, and the quantum state of the magnons. Secondly, to develop an algorithm to process this relationship to reconstruct the quantum state of the magnons that best matches the observed optical data.
+            <div class="paper-entry">
+                <button onclick="SummaryShowHide('QTomSum', 'QTom')" class="paper-title" id="QTom">Measuring magnons using light</button>
+                <div class="paper-links">
+                    <a class="side-button" href="https://arxiv.org/abs/2311.10152" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                    <a class="side-button" href="https://doi.org/10.1103/PhysRevB.110.014416" target="_blank" rel="noopener noreferrer">[DOI]</a>
+                </div>
+                <div class="paper-summary" id="QTomSum">
+                    Every experiment ends in a measurement. So, if we want to unlock quantum applications using magnets, we need to answer a fundamental question: how can we measure the quantum states of <b>magnons</b>?<br>
+                    The first step in measuring any system, whether it's magnetic or not, is to connect it to something we already know how to measure. For magnets, I turned to optical photons. Why? Because we already have incredibly advanced tools to measure photons with quantum precision. Then, the idea is simple: if we can transfer information from magnons to photons, and then measure those photons, we can fully characterize the quantum state of the magnons. The process of fully characterizing a quantum state is called <b>quantum tomography</b>.<br>
+                    So, can we transfer information from magnons to photons? That's where this process called <b>Brillouin light scattering</b> comes in. When a photon strikes a magnet, it can either absorb a magnon and gain energy or create a magnon and lose energy. Either way, the photon's frequency changes as it scatters, although not every photon will scatter. What's useful for us is that the number of scattered photons depends strongly on the phase of the photons (remember that photons are waves, just like everything else in this universe) and the quantum state of the magnons. By varying the phase of the photons and monitoring how many of them scatter, we can gather a lot of information about the magnons' quantum state.<br>
+                    The actual task in this project was two-fold. First, to derive the precise relationship between the number of scattered photons, their phase, and the quantum state of the magnons. Secondly, to develop an algorithm to process this relationship to reconstruct the quantum state of the magnons that best matches the observed optical data.
+                </div>
             </div>
             <br>
 
-            <button onclick="SummaryShowHide('ProtSum', 'Prot')" class="paper-title" id="Prot">Generating arbitrary quantum state of magnons</button>
-            <button class="side-button" onclick="window.open('https://arxiv.org/abs/2201.10170');">[arXiv]</button>
-            <button class="side-button" onclick="window.open('https://iopscience.iop.org/article/10.1088/2515-7639/ac81f0');">[DOI]</button>
-            <div class="paper-summary" id="ProtSum">
-                When you turn on your phone, it takes a moment to boot up, loading your home screen and all your apps. This kind of initialization isn't just a quirk of your device, but a universal feature shared by all devices, big or small, classical or quantum. For magnons to be useful in quantum applications, we need a way to initialize them into specific quantum states, on demand. But how do you actually do that?<br>
-                In this work, I developed an algorithm that provides a set of operations needed to generate any <b>arbitrary quantum state of magnons</b>. Let's see what the algorithm spits out for an example. Suppose you want to use magnons to sense extremely tiny magnetic fields. To do this, it turns out that they should be prepared in a strange quantum state: a superposition of having no magnons and having six magnons at the same time (let's call this state 0+6). Simply injecting magnons into the system will get you to six magnons, but how do you create that superposition?<br>
-                The algorithm offers a neat solution. First, you inject magnons one by one until you have three magnons in the system. Then, you couple these magnons to another system that can exchange information with them. If you tune this coupling just right, there's a 50-50 chance the system will either create a magnon or absorb one. This leaves you with a superposition of 2+4 magnons. Repeat this process two more times, and you end up with the 0+6 state you wanted.
+            <div class="paper-entry">
+                <button onclick="SummaryShowHide('ProtSum', 'Prot')" class="paper-title" id="Prot">Generating arbitrary quantum state of magnons</button>
+                <div class="paper-links">
+                    <a class="side-button" href="https://arxiv.org/abs/2201.10170" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                    <a class="side-button" href="https://iopscience.iop.org/article/10.1088/2515-7639/ac81f0" target="_blank" rel="noopener noreferrer">[DOI]</a>
+                </div>
+                <div class="paper-summary" id="ProtSum">
+                    When you turn on your phone, it takes a moment to boot up, loading your home screen and all your apps. This kind of initialization isn't just a quirk of your device, but a universal feature shared by all devices, big or small, classical or quantum. For magnons to be useful in quantum applications, we need a way to initialize them into specific quantum states, on demand. But how do you actually do that?<br>
+                    In this work, I developed an algorithm that provides a set of operations needed to generate any <b>arbitrary quantum state of magnons</b>. Let's see what the algorithm spits out for an example. Suppose you want to use magnons to sense extremely tiny magnetic fields. To do this, it turns out that they should be prepared in a strange quantum state: a superposition of having no magnons and having six magnons at the same time (let's call this state 0+6). Simply injecting magnons into the system will get you to six magnons, but how do you create that superposition?<br>
+                    The algorithm offers a neat solution. First, you inject magnons one by one until you have three magnons in the system. Then, you couple these magnons to another system that can exchange information with them. If you tune this coupling just right, there's a 50-50 chance the system will either create a magnon or absorb one. This leaves you with a superposition of 2+4 magnons. Repeat this process two more times, and you end up with the 0+6 state you wanted.
+                </div>
             </div>
             <br>
 
-            <button onclick="SummaryShowHide('SkyrSum', 'Skyr')" class="paper-title" id="Skyr">How to observe quantum skyrmions in magnets?</button>
-            <button class="side-button" onclick="window.open('https://arxiv.org/abs/2506.16877');">[arXiv]</button>
-            <button class="side-button" onclick="window.open('https://doi.org/10.1103/5c9q-nsb4');">[DOI]</button>
-            <div class="paper-summary" id="SkyrSum">
-                Magnetic skyrmions are tiny whirlpool-like patterns of magnetization in magnetic materials. Skyrmions have been predicted to show quantum behavior, opening the door to skyrmion-based elements for quantum information processing. However, this concept remains theoretical at present. The quantization of the helicity mode and the appearance of discrete energy levels remain to be observed. These are the key experimental milestones that would elevate the skyrmion from a classical information carrier to a solid-state qubit.<br>
-                Our theoretical research proposes a new experimental approach: shine a laser onto a skyrmion and analyze the light that scatters off it. It turns out that if the skyrmion behaves classically, the spectrum, i.e., the number of photons across different energies, will be symmetric around the input laser. But if the skyrmion exhibits quantum behavior, distinctive asymmetries will appear in this spectrum. These asymmetries can be controlled by adjusting the laser's power, making them easier to detect and measure.<br>
-                This work provides a concrete, achievable test for the quantum nature of skyrmions. By offering a clear experimental signature that distinguishes quantum from classical skyrmions, this research paves the way for confirming whether these magnetic structures truly operate in the quantum realm, advancing this new platform for implementing qubits.
+            <div class="paper-entry">
+                <button onclick="SummaryShowHide('SkyrSum', 'Skyr')" class="paper-title" id="Skyr">How to observe quantum skyrmions in magnets?</button>
+                <div class="paper-links">
+                    <a class="side-button" href="https://arxiv.org/abs/2506.16877" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                    <a class="side-button" href="https://doi.org/10.1103/5c9q-nsb4" target="_blank" rel="noopener noreferrer">[DOI]</a>
+                </div>
+                <div class="paper-summary" id="SkyrSum">
+                    Magnetic skyrmions are tiny whirlpool-like patterns of magnetization in magnetic materials. Skyrmions have been predicted to show quantum behavior, opening the door to skyrmion-based elements for quantum information processing. However, this concept remains theoretical at present. The quantization of the helicity mode and the appearance of discrete energy levels remain to be observed. These are the key experimental milestones that would elevate the skyrmion from a classical information carrier to a solid-state qubit.<br>
+                    Our theoretical research proposes a new experimental approach: shine a laser onto a skyrmion and analyze the light that scatters off it. It turns out that if the skyrmion behaves classically, the spectrum, i.e., the number of photons across different energies, will be symmetric around the input laser. But if the skyrmion exhibits quantum behavior, distinctive asymmetries will appear in this spectrum. These asymmetries can be controlled by adjusting the laser's power, making them easier to detect and measure.<br>
+                    This work provides a concrete, achievable test for the quantum nature of skyrmions. By offering a clear experimental signature that distinguishes quantum from classical skyrmions, this research paves the way for confirming whether these magnetic structures truly operate in the quantum realm, advancing this new platform for implementing qubits.
+                </div>
             </div>
 
             <!-- Proposals -->
