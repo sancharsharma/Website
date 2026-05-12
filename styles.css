@@ -43,18 +43,6 @@
 
 /* List of Summaries */
 
-/*.paper-title{
-	width: 80%;
-	position: relative;
-	cursor: pointer;
-	background-color: rgba(20,20,90,0.7);
-	border: none;
-	margin-bottom: 10px;
-	color: white;
-	font-weight: 450;
-	text-align: left;
-}*/
-
 .paper-summary {
 	width: 80%;
 	display: none;
@@ -141,17 +129,6 @@
 
 /* End of Summaries*/
 
-#canvas-image-blending {
-	margin-left: var(--sidebar-wid);
-	position: absolute; 
-	width: calc(100% - var(--sidebar-wid));
-	height: 450px;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-
 .img-props {
 	width: 100%;
 	height: auto;
@@ -176,10 +153,20 @@ img {
 }
 
 .bottomed {
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	transform: translate(-50%,-100%);
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#typewriter-text::after {
+    content: '|';
+    animation: blink-caret 0.5s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% { opacity: 0; }
 }
 
 .main-content {
@@ -187,19 +174,6 @@ img {
   width: 100% - var(--sidebar-wid);
   min-width: 700px;
   max-width: 1500px;
-}
-
-.Publications {
-	width: 100%;
-	font-family: 'Rubik', sans-serif;
-}
-
-.header {
-  display: flex;
-}
-
-.work-header {
-  display: flex;
 }
 
 h1 {
@@ -238,68 +212,9 @@ p {
   color: black;
 }
 
-.header-text {
-  width: 80%
-}
-
-.header-image {
-  width: 65%;
-  height: 65%;
-}
-
-.col {
-  padding-bottom: 30px;
-}
-
-.rounded-corners {
-  border-radius: 20px;
-  height: 300px;
-}
-
 .title-image {
   border-radius: 20px;
   width: 80%;
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  border-radius: 3%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-ul {
-  list-style-position: inside;
-  list-style-type: square;
 }
 
 .heading {
@@ -500,32 +415,70 @@ ul {
 
 /* END of: Research */
 
+/* Publication list toggles */
+
+#QM_list,
+#OM_list {
+    display: none;
+    width: 100%;
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+}
+
+strong {
+    font-weight: 500;
+}
+
 /* STYLING: Contact me section */
 
+.contact-icons {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-item span {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
 .fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 20%;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+    padding: 20px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
-.fa-paper-plane {
-  background: #3D348B;
-  color: white;
+.fa-envelope {
+    background: #3D348B;
+    color: white;
 }
 
-.fa-instagram {
-  background: #7678ED;
-  color: white;
+.fa-google {
+    background: #EA4335;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
 }
 
 .fa-github {
-  background: #0973fd;
-  color: white;
+    background: #0973fd;
+    color: white;
 }
