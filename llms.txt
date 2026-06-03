@@ -1,0 +1,49 @@
+# Sanchar Sharma
+
+> Theoretical physicist and junior group leader specializing in quantum magnonics and cavity opto-magnonics. Based at IFIMAC – Condensed Matter Physics Center, Universidad Autónoma de Madrid, Spain. Funded by the "la Caixa" Foundation.
+
+## About
+
+Sanchar Sharma studies the quantum dynamics of ferromagnets, with the long-term goal of harnessing magnons — quasiparticles of spin waves in ferromagnets — for quantum applications such as interconnects, transduction between microwave and optical frequencies, and logic operations. His theoretical work spans magnon-microwave and magnon-photon interactions, quantum state generation and tomography of magnons, cavity optomagnonic coupling, and the quantum properties of magnetic skyrmions.
+
+## Research Areas
+
+- **Quantum Magnonics**: non-classical states of magnons (spin cat states, Fock states, superpositions), quantum sensing of magnons using Brillouin light scattering, magnon-mediated quantum gates for superconducting qubits, cavity magnonics
+- **Cavity Opto-magnonics**: magnon-photon coupling, microwave-to-optical transduction, optomagnonic crystals, optical cooling of magnons, light scattering by magnons in whispering gallery mode cavities
+- **Quantum Skyrmions**: optical signatures of quantum magnetic skyrmions, quantization of the helicity mode
+
+## Selected Publications
+
+- [Optical Signatures of Quantum Skyrmions](https://doi.org/10.1103/5c9q-nsb4) — Sanchar Sharma, Christina Psaroudaki, Phys. Rev. Lett. (2026)
+- [Cavity-Enhanced Optical Manipulation of Antiferromagnetic Magnon-Pairs](https://arxiv.org/abs/2506.16877) — TS Parvini, ALE Römling, Sanchar Sharma, S Viola Kusminskiy, Phys. Rev. B (2025)
+- [Magnon-mediated quantum gates for superconducting qubits](https://arxiv.org/abs/2311.10152) — M Dols, Sanchar Sharma, L Bechara, YM Blanter, M Kounalakis, S Viola Kusminskiy, Phys. Rev. B (2024)
+- [Quantum tomography of magnons using Brillouin light scattering](https://doi.org/10.1103/PhysRevB.110.014416) — Sanchar Sharma, S Viola Kusminskiy, VASV Bittencourt, Phys. Rev. B (2024)
+- [Protocol for generating an arbitrary quantum state of the magnetization in cavity magnonics](https://doi.org/10.1088/2515-7639/ac81f0) — Sanchar Sharma, VASV Bittencourt, S Viola Kusminskiy, Journal of Physics: Materials (2022)
+- [Spin cat states in ferromagnetic insulators](https://arxiv.org/abs/2105.00017) — Sanchar Sharma, VASV Bittencourt, AD Karenowska, S Viola Kusminskiy, Phys. Rev. B: Letters (2021)
+- [Design of an optomagnonic crystal: Towards optimal magnon-photon mode matching at the microscale](https://arxiv.org/abs/2107.06638) — J Graf, Sanchar Sharma, H Hübl, S Viola Kusminskiy, Phys. Rev. Res. (2021)
+- [Optimal mode matching in cavity optomagnonics](https://arxiv.org/abs/2001.04720) — Sanchar Sharma, BZ Rameshti, YM Blanter, GEW Bauer, Phys. Rev. B (2020)
+- [Optical cooling of magnons](https://arxiv.org/abs/1804.00807) — Sanchar Sharma, YM Blanter, GEW Bauer, Phys. Rev. Letters (2018)
+- [Light scattering by magnons in whispering gallery mode cavities](https://arxiv.org/abs/1706.02499) — Sanchar Sharma, YM Blanter, GEW Bauer, Phys. Rev. B (2017)
+
+## Background
+
+- "la Caixa" Junior Group Leader — IFIMAC, Universidad Autónoma de Madrid, Madrid, Spain (Sep 2025 – present)
+- Postdoctoral Researcher — Laboratoire de Physique de l'École Normale Supérieure (LPENS), Paris, France (Apr 2024 – Aug 2025)
+- Postdoctoral Researcher — RWTH Aachen, Aachen, Germany (Jan 2023 – Mar 2024)
+- Postdoctoral Researcher — Max Planck Institute for the Science of Light (MPL), Erlangen, Germany (Nov 2019 – Dec 2022)
+- PhD in Applied Physics — Delft University of Technology (TU Delft), Delft, Netherlands (Aug 2015 – Aug 2019)
+- B.Tech + M.Tech — Indian Institute of Technology Bombay (IIT-B), Mumbai, India (Aug 2010 – Jun 2015)
+
+## Publicly Available Funding Proposals
+
+- [Marie-Curie Postdoctoral Fellowship (2023)](https://github.com/sancharsharma/marie-curie-2023) — full submission with review comments
+- ["la Caixa" Junior Leader Fellowship (2024)](https://github.com/sancharsharma/la-caixa-junior-leader-2024) — full submission with review comments
+
+## Contact
+
+- Email: sanchar.sharma@uam.es
+- Google Scholar: https://scholar.google.com/citations?user=UWxbm8oAAAAJ
+- ORCID: https://orcid.org/0000-0001-9013-6208
+- LinkedIn: https://www.linkedin.com/in/sanchar-sharma/
+- GitHub: https://github.com/sancharsharma/
+- Website: https://sancharsharma.com
