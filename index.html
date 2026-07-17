@@ -87,7 +87,6 @@
 </head>
 
 <body>
-    <!-- <canvas id="canvas-image-blending"></canvas> -->
 
     <div class="sidenav">
         <button class="sidenav_text" onclick="ToScroll('Introduction')">Introduction</button>
@@ -109,14 +108,21 @@
 
         <div style="padding: 5% 5%;">
 
+            <!-- News card -->
+            <div class="news-card">
+                <span class="news-tag">News</span>
+                <p>We are organizing a workshop on <strong>Quantum Magnonics</strong>, and applications to attend are now open. Find more details <a href="https://www.we-heraeus-stiftung.de/veranstaltungen/quantum-magnonics/main/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+            </div>
+
             <!-- Introduction -->
             <h2 class="heading" id="Introduction">Introduction</h2>
 
             <div class="Intro">
                 <div class="Intro_Text">
-                    <p>I am a theoretical physicist, currently holding a junior group leader position in Madrid with a funding from the <a href="https://lacaixafoundation.org/en/">"la Caixa" foundation</a>.</p>
-                    <p>My research focuses on the quantum dynamics of ferromagnets, with the long-term goal of harnessing their potential for quantum applications, such as interconnects, transduction, and logic operations. Under typical conditions, the collective excitations in ferromagnets can be described by magnons, which are quasiparticles representing either propagating or standing waves of spin excitations. I theoretically study the quantum properties of magnons and their interactions with other quantum systems, including microwaves and optical fields. A key aspect of my work is exploring how magnons can act as carriers of quantum information, offering new pathways for quantum communication, particularly in systems where devices are in close proximity. This involves both fundamental research on microscopic theories to describe magnon behavior and designing protocols for their quantum manipulation.</p>
-					<p>We are organizing a workshop on Quantum Magnonics, and the applications to attend are open. Find more details <a href="https://www.we-heraeus-stiftung.de/veranstaltungen/quantum-magnonics/main/">here</a>. </p>
+                    <p>I am a theoretical physicist, currently holding a junior group leader position in Madrid with a funding from the <a href="https://lacaixafoundation.org/en/" target="_blank" rel="noopener noreferrer">"la Caixa" foundation</a>.</p>
+                    <p>My research focuses on the quantum dynamics of ferromagnets, with the long-term goal of harnessing their potential for <strong>quantum applications</strong>, such as interconnects, transduction, and logic operations.</p>
+                    <p>Under typical conditions, the collective excitations in ferromagnets can be described by <strong>magnons</strong>, quasiparticles representing either propagating or standing waves of spin excitations.</p>
+                    <p>I theoretically study the quantum properties of magnons and their interactions with other quantum systems, including microwaves and optical fields. A key aspect of my work is exploring how magnons can act as carriers of <strong>quantum information</strong>, offering new pathways for quantum communication, particularly in systems where devices are in close proximity. This involves both fundamental research on microscopic theories to describe magnon behavior and designing protocols for their quantum manipulation.</p>
                 </div>
                 <div class="Intro_Image">
                     <img src="Sanchar_Pic.jpg" class="title-image" alt="Sanchar Sharma">
@@ -216,17 +222,16 @@
                     <p>Can magnets be useful for quantum applications? While magnetism has long been investigated for classical applications such as low-power logic devices, long-range transport, magnetic field sensing, and more, its potential for quantum applications garnered attention only recently. My goal with these theoretical developments is to propose feasible experiments that can advance demonstrations of genuine non-classical effects in magnets.</p>
                     <span id="QM_list">
                         <ol>
-                            <li><em>Optical Signatures of Quantum Skyrmions</em><br><strong>Sanchar Sharma</strong>, Christina Psaroudaki, Phys. Rev. Lett. (2026)</li>
-                            <li><em>Magnon-mediated quantum gates for superconducting qubits</em><br>M Dols, <strong>Sanchar Sharma</strong>, L Bechara, YM Blanter, M Kounalakis, S Viola Kusminskiy, Phys. Rev. B (2024)</li>
-                            <li><em>Quantum tomography of magnons using Brillouin light scattering</em><br><strong>Sanchar Sharma</strong>, S Viola Kusminskiy, VASV Bittencourt, Phys. Rev. B (2024)</li>
-                            <li><em>Protocol for generating an arbitrary quantum state of the magnetization in cavity magnonics</em><br><strong>Sanchar Sharma</strong>, VASV Bittencourt, S Viola Kusminskiy, Journal of Physics: Materials (2022)</li>
-                            <li><em>Spin cat states in ferromagnetic insulators</em><br><strong>Sanchar Sharma</strong>, VASV Bittencourt, AD Karenowska, S Viola Kusminskiy, Phys Rev B: Letters (2021)</li>
+                            <li><a href="https://doi.org/10.1103/5c9q-nsb4" target="_blank" rel="noopener noreferrer"><em>Optical Signatures of Quantum Skyrmions</em><br><strong>Sanchar Sharma</strong>, Christina Psaroudaki, Phys. Rev. Lett. (2026)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevB.110.104416" target="_blank" rel="noopener noreferrer"><em>Magnon-mediated quantum gates for superconducting qubits</em><br>M Dols, <strong>Sanchar Sharma</strong>, L Bechara, YM Blanter, M Kounalakis, S Viola Kusminskiy, Phys. Rev. B (2024)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevB.110.014416" target="_blank" rel="noopener noreferrer"><em>Quantum tomography of magnons using Brillouin light scattering</em><br><strong>Sanchar Sharma</strong>, S Viola Kusminskiy, VASV Bittencourt, Phys. Rev. B (2024)</a></li>
+                            <li><a href="https://doi.org/10.1088/2515-7639/ac81f0" target="_blank" rel="noopener noreferrer"><em>Protocol for generating an arbitrary quantum state of the magnetization in cavity magnonics</em><br><strong>Sanchar Sharma</strong>, VASV Bittencourt, S Viola Kusminskiy, Journal of Physics: Materials (2022)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevB.103.L100403" target="_blank" rel="noopener noreferrer"><em>Spin cat states in ferromagnetic insulators</em><br><strong>Sanchar Sharma</strong>, VASV Bittencourt, AD Karenowska, S Viola Kusminskiy, Phys Rev B: Letters (2021)</a></li>
                         </ol>
                     </span>
-                    <button class="res-pub-but" onclick="PubShowHide('QM_list', 'QM_button')" id="QM_button">Click to show relevant publications</button>
+                    <button class="res-pub-but" onclick="PubShowHide('QM_list', 'QM_button')" id="QM_button">Show relevant publications</button>
                 </div>
             </div>
-            <hr>
 
             <div class="res">
                 <div class="res_text">
@@ -234,17 +239,17 @@
                     <p>Microwave to optical transduction is one of the most sought after application in quantum communication. Magnets are promising intermediaries for such a transduction because they couple very strongly with the microwaves, although achieving a comparable coupling with optics remains a challenge. My work involves studying and enhancing this optomagnonic coupling, particularly with the use of cavities.</p>
                     <span id="OM_list">
                         <ol>
-                            <li><em>Optical Signatures of Quantum Skyrmions</em><br><strong>Sanchar Sharma</strong>, Christina Psaroudaki, Phys. Rev. Lett. (2026)</li>
-                            <li><em>Cavity-Enhanced Optical Manipulation of Antiferromagnetic Magnon-Pairs</em><br>TS Parvini, ALE R&#246;mling, <strong>Sanchar Sharma</strong>, S Viola Kusminskiy, Phys. Rev. B (2025)</li>
-                            <li><em>Design of an optomagnonic crystal: Towards optimal magnon-photon mode matching at the microscale</em><br>J Graf, <strong>Sanchar Sharma</strong>, H H&#252;bl, S Viola Kusminskiy, Phys. Rev. Res. (2021)</li>
-                            <li><em>Coherent pumping of high-momentum magnons by light</em><br>F &#352;imi&#263;, <strong>Sanchar Sharma</strong>, YM Blanter, GEW Bauer, Phys. Rev. B (2020)</li>
-                            <li><em>Optimal mode matching in cavity optomagnonics</em><br><strong>Sanchar Sharma</strong>, BZ Rameshti, YM Blanter, GEW Bauer, Phys. Rev. B (2020)</li>
-                            <li><em>Optical cooling of magnons</em><br><strong>Sanchar Sharma</strong>, YM Blanter, GEW Bauer, Phys. Rev. Letters (2018)</li>
-                            <li><em>Selection rules for cavity-enhanced Brillouin light scattering from magnetostatic modes</em><br>JA Haigh, NJ Lambert, <strong>Sanchar Sharma</strong>, YM Blanter, GEW Bauer, AJ Ramsay, Phys. Rev. B (2018)</li>
-                            <li><em>Light scattering by magnons in whispering gallery mode cavities</em><br><strong>Sanchar Sharma</strong>, YM Blanter, GEW Bauer, Phys. Rev. B (2017)</li>
+                            <li><a href="https://doi.org/10.1103/5c9q-nsb4" target="_blank" rel="noopener noreferrer"><em>Optical Signatures of Quantum Skyrmions</em><br><strong>Sanchar Sharma</strong>, Christina Psaroudaki, Phys. Rev. Lett. (2026)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevB.111.014416" target="_blank" rel="noopener noreferrer"><em>Cavity-Enhanced Optical Manipulation of Antiferromagnetic Magnon-Pairs</em><br>TS Parvini, ALE R&#246;mling, <strong>Sanchar Sharma</strong>, S Viola Kusminskiy, Phys. Rev. B (2025)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevResearch.3.013277" target="_blank" rel="noopener noreferrer"><em>Design of an optomagnonic crystal: Towards optimal magnon-photon mode matching at the microscale</em><br>J Graf, <strong>Sanchar Sharma</strong>, H H&#252;bl, S Viola Kusminskiy, Phys. Rev. Res. (2021)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevB.101.100401" target="_blank" rel="noopener noreferrer"><em>Coherent pumping of high-momentum magnons by light</em><br>F &#352;imi&#263;, <strong>Sanchar Sharma</strong>, YM Blanter, GEW Bauer, Phys. Rev. B (2020)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevB.99.214423" target="_blank" rel="noopener noreferrer"><em>Optimal mode matching in cavity optomagnonics</em><br><strong>Sanchar Sharma</strong>, BZ Rameshti, YM Blanter, GEW Bauer, Phys. Rev. B (2019)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevLett.121.087205" target="_blank" rel="noopener noreferrer"><em>Optical cooling of magnons</em><br><strong>Sanchar Sharma</strong>, YM Blanter, GEW Bauer, Phys. Rev. Letters (2018)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevB.97.214423" target="_blank" rel="noopener noreferrer"><em>Selection rules for cavity-enhanced Brillouin light scattering from magnetostatic modes</em><br>JA Haigh, NJ Lambert, <strong>Sanchar Sharma</strong>, YM Blanter, GEW Bauer, AJ Ramsay, Phys. Rev. B (2018)</a></li>
+                            <li><a href="https://doi.org/10.1103/PhysRevB.96.094412" target="_blank" rel="noopener noreferrer"><em>Light scattering by magnons in whispering gallery mode cavities</em><br><strong>Sanchar Sharma</strong>, YM Blanter, GEW Bauer, Phys. Rev. B (2017)</a></li>
                         </ol>
                     </span>
-                    <button class="res-pub-but" onclick="PubShowHide('OM_list', 'OM_button')" id="OM_button">Click to show relevant publications</button>
+                    <button class="res-pub-but" onclick="PubShowHide('OM_list', 'OM_button')" id="OM_button">Show relevant publications</button>
                 </div>
                 <div class="res_sub">Cavity Opto-magnonics</div>
             </div>
@@ -335,9 +340,9 @@
                         <i class="fa fa-file-code-o"></i><span><span class="file-label">Gantt chart</span> <span class="file-desc">&mdash; reusable LaTeX source</span></span>
                         <span class="gantt-actions">
                             <a href="https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fsancharsharma.com%2Fproposals%2Fmarie-curie-2023%2FGantt.tex&snip_name=Gantt.tex" target="_blank" rel="noopener noreferrer">Open in Overleaf</a>
-                            <a href="proposals/marie-curie-2023/Gantt.tex" download>Download .tex</a>
+                            <a href="proposals/marie-curie-2023/Gantt.tex" download target="_blank" rel="noopener noreferrer">Download .tex</a>
                         </span></div></li>
-                    <li class="download-all"><a class="proposal-file" href="proposals/marie-curie-2023.zip">
+                    <li class="download-all"><a class="proposal-file" href="proposals/marie-curie-2023.zip" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-file-archive-o"></i><span><span class="file-label">Download all</span> <span class="file-desc">&mdash; everything as a .zip</span></span></a></li>
                 </ul>
             </div>
@@ -356,7 +361,7 @@
                         <i class="fa fa-file-text-o"></i><span><span class="file-label">CV abstract</span> <span class="file-desc">&mdash; written on the interface</span></span></a></li>
                     <li><a class="proposal-file" href="proposals/la-caixa-junior-leader-2024/QualitativeReport.txt" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-file-text-o"></i><span><span class="file-label">Qualitative report</span> <span class="file-desc">&mdash; reviewer feedback</span></span></a></li>
-                    <li class="download-all"><a class="proposal-file" href="proposals/la-caixa-junior-leader-2024.zip">
+                    <li class="download-all"><a class="proposal-file" href="proposals/la-caixa-junior-leader-2024.zip" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-file-archive-o"></i><span><span class="file-label">Download all</span> <span class="file-desc">&mdash; everything as a .zip</span></span></a></li>
                 </ul>
             </div>
@@ -364,7 +369,7 @@
 
             <!-- Vacancies -->
             <h2 class="heading" id="Vacancies">Vacancies</h2>
-            <p>Unfortunately, I don't have any vacancies right now, but I am open to joint proposals for funding. Some of the options are: <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships">Marie-Curie Postdoctoral Fellowships</a> from the European Commission; <a href="https://lacaixafoundation.org/en/doctoral-inphinit-fellowships">INPhINIT</a> from the "la Caixa" foundation; a <a href="https://alliance4universities.eu/en/mobility-scholarships/">mobility grant</a> for PhDs in Iran and sub-Saharan Africa; <a href="https://www.aei.gob.es/convocatorias/buscador-convocatorias/ayudas-contratos-juan-cierva-2025">Juan de la Cierva fellowships</a> from the Spanish Government.</p>
+            <p>Unfortunately, I don't have any vacancies right now, but I am open to joint proposals for funding. Some of the options are: <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships" target="_blank" rel="noopener noreferrer">Marie-Curie Postdoctoral Fellowships</a> from the European Commission; <a href="https://lacaixafoundation.org/en/doctoral-inphinit-fellowships" target="_blank" rel="noopener noreferrer">INPhINIT</a> from the "la Caixa" foundation; a <a href="https://alliance4universities.eu/en/mobility-scholarships/" target="_blank" rel="noopener noreferrer">mobility grant</a> for PhDs in Iran and sub-Saharan Africa; <a href="https://www.aei.gob.es/convocatorias/buscador-convocatorias/ayudas-contratos-juan-cierva-2025" target="_blank" rel="noopener noreferrer">Juan de la Cierva fellowships</a> from the Spanish Government.</p>
 
         </div> <!-- End of padding -->
     </div> <!-- End of main-content -->

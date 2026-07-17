@@ -3,9 +3,39 @@
 
 	/* Timeline variables */
 	--timeline-col: DarkSlateBlue;
-	--timeline-bg: rgba(80,180,130,0.2);
+	--timeline-bg: rgba(43,143,43,0.08);
 	--bg-content-pad: 40px;
 	--arrow-wid: 12px;
+
+	/* Research greens */
+	--green-900: #0f4410;
+	--green-700: #145a14;
+	--green-600: #1c7a1c;
+	--green-500: #2b8f2b;
+	--res-line: #e2e8df;
+	--res-ink-soft: #40493f;
+
+	/* Card / surface greens */
+	--card-bg: #F6FBF5;
+	--card-border: #A9D6A9;
+	--card-hover: #E7F4E5;
+	--card-divider: #E1EFDE;
+	--card-icon: #4f8f4f;
+}
+
+/* Base typography — Rubik, inherited everywhere (buttons inherit via Bootstrap Reboot) */
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+/* Content links — dark green everywhere (component-specific rules override) */
+a {
+	color: var(--green-700);
+	text-decoration-color: rgba(20, 90, 20, 0.4);
+}
+
+a:hover {
+	color: var(--green-900);
 }
 
 /* The sidebar menu */
@@ -14,7 +44,7 @@
 	width: var(--sidebar-wid); /* Set the width of the sidebar */
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	z-index: 1; /* Stay on top */
-	top: 0;  /* Top margin */ 
+	top: 0;  /* Top margin */
 	left: 0;
 	background-color: rgba(190,190,190,0.0); /* Black */
 	overflow-x: hidden; /* Disable horizontal scroll */
@@ -26,7 +56,7 @@
 .sidenav_text {
 	padding: 6px 8px 6px 16px;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 22px;
 	color: rgba(145,30,145,0.5);
 	display: block;
 	border: none;
@@ -43,43 +73,59 @@
 
 /* List of Summaries */
 
+/* Shared card surface — paper summaries and proposal file lists */
+.paper-summary,
+.proposal-files {
+	background-color: var(--card-bg);
+	border: 2px solid var(--card-border);
+	border-radius: 18px;
+}
+
 .paper-summary {
 	width: 80%;
 	display: none;
 	text-align: justify;
 	margin-top: 0.7rem;
 	padding: 1.1rem 1.4rem;
-	background-color: #FBFDFF;
-	border: 2px solid #ADCFFF;
-	border-radius: 18px;
 	line-height: 1.6;
 }
 
+/* Interactive controls: disable text selection / tap highlight */
+.paper-title,
+.side-button,
+.proposal-toggle,
+.res-pub-but {
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+/* Pill buttons — paper titles and proposal toggles */
+.paper-title,
+.proposal-toggle {
+	appearance: none;
+	background-color: #FFFFFF;
+	border-radius: 40em;
+	border-style: none;
+	box-shadow: var(--card-border) 0 -12px 6px inset;
+	box-sizing: border-box;
+	color: #000000;
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: -.24px;
+	margin: 0;
+	outline: none;
+	transition: all .15s;
+}
+
 .paper-title {
-  width: 80%;
-  appearance: none;
-  background-color: #FFFFFF;
-  border-radius: 40em;
-  border-style: none;
-  box-shadow: #ADCFFF 0 -12px 6px inset;
-  box-sizing: border-box;
-  color: #000000;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: -.24px;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.3rem;
-  quotes: auto;
-  text-align: center;
-  text-decoration: none;
-  transition: all .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+	width: 80%;
+	display: inline-block;
+	padding: 1rem 1.3rem;
+	quotes: auto;
+	text-align: center;
+	text-decoration: none;
 }
 
 .side-button {
@@ -97,7 +143,6 @@
   color: #41403e;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Rubik', sans-serif;
   font-size: 1rem;
   line-height: 8px; /* Used to control the height */
   outline: none;
@@ -108,9 +153,6 @@
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
 }
 
 .side-button:hover {
@@ -168,29 +210,11 @@
 
 .proposal-toggle {
 	width: 100%;
-	appearance: none;
-	background-color: #FFFFFF;
-	border-radius: 40em;
-	border-style: none;
-	box-shadow: #ADCFFF 0 -12px 6px inset;
-	box-sizing: border-box;
-	color: #000000;
-	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-family: 'Rubik', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 700;
-	letter-spacing: -.24px;
-	margin: 0;
-	outline: none;
-	padding: 1rem 1.5rem;
 	text-align: left;
-	transition: all .15s;
-	user-select: none;
-	-webkit-user-select: none;
-	touch-action: manipulation;
+	padding: 1rem 1.5rem;
 }
 
 .proposal-toggle .caret {
@@ -208,9 +232,6 @@
 	margin: 0.6rem 0 0 0;
 	padding: 0.5rem 0.6rem;
 	list-style: none;
-	border: 2px solid #ADCFFF;
-	border-radius: 18px;
-	background-color: #FBFDFF;
 }
 
 .proposal-files li {
@@ -218,7 +239,7 @@
 }
 
 .proposal-files li + li {
-	border-top: 1px solid #E6EEF9;
+	border-top: 1px solid var(--card-divider);
 }
 
 .proposal-file {
@@ -233,11 +254,11 @@
 }
 
 .proposal-file:hover {
-	background-color: #EAF2FF;
+	background-color: var(--card-hover);
 }
 
 .proposal-file .fa {
-	color: #5b7fb3;
+	color: var(--card-icon);
 	width: 1.1rem;
 	text-align: center;
 	flex-shrink: 0;
@@ -274,7 +295,7 @@
 	font-weight: 600;
 	padding: 0.3rem 0.75rem;
 	border-radius: 12px;
-	border: 1.5px solid #ADCFFF;
+	border: 1.5px solid var(--card-border);
 	color: #41403e;
 	text-decoration: none;
 	white-space: nowrap;
@@ -282,12 +303,12 @@
 }
 
 .gantt-actions a:hover {
-	background-color: #EAF2FF;
+	background-color: var(--card-hover);
 }
 
 .proposal-files .download-all {
 	margin-top: 0.3rem;
-	border-top: 2px solid #E6EEF9;
+	border-top: 2px solid var(--card-divider);
 }
 
 .proposal-files .download-all .fa {
@@ -308,22 +329,21 @@ img {
 	object-fit: cover;
 }
 
-.centered {
+.centered,
+.bottomed {
 	position: absolute;
-	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	white-space: nowrap;
 	color: white;
 }
 
+.centered {
+	top: 50%;
+}
+
 .bottomed {
-    position: absolute;
-    top: 72%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    color: white;
+	top: 72%;
 }
 
 #typewriter-text::after {
@@ -343,21 +363,18 @@ img {
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
   font-size: 3.0rem;
   font-weight: 700;
   color: black;
 }
 
 h2 {
-  font-family: 'Rubik', sans-serif;
   font-size: 2.0rem;
   font-weight: 500;
   color: black;
 }
 
 h3 {
-  font-family: 'Rubik', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: black;
@@ -365,14 +382,12 @@ h3 {
 }
 
 p {
-  font-family: 'Rubik', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   color: black;
 }
 
 .time-text {
-  font-family: 'Rubik', sans-serif;
   font-size: 1.2rem;
   font-weight: 200;
   color: black;
@@ -386,7 +401,6 @@ p {
 .heading {
 	padding-bottom: 20px;
 	padding-top: 80px;
-	font-family: 'Rubik', sans-serif;
 	font-size: 2.0rem;
 	font-weight: 500;
 	color: rgba(30,30,150,1);
@@ -394,6 +408,34 @@ p {
 
 
 /* STYLING: Introduction */
+
+.news-card {
+	display: flex;
+	align-items: baseline;
+	gap: 0.9rem;
+	margin: 1.5rem 0 0.5rem;
+	padding: 1rem 1.4rem;
+	background-color: var(--card-bg);
+	border: 1px solid var(--card-border);
+	border-left: 4px solid var(--green-500);
+	border-radius: 12px;
+}
+
+.news-card p {
+	margin: 0;
+}
+
+.news-tag {
+	flex-shrink: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 0.72rem;
+	font-weight: 600;
+	color: var(--green-700);
+	background-color: rgba(80, 180, 130, 0.18);
+	padding: 0.2rem 0.55rem;
+	border-radius: 6px;
+}
 
 #Introduction {
 	padding-top: 60px;
@@ -418,7 +460,8 @@ p {
 	flex: 70%;
 	padding: 10px;
 	text-align: justify;
-}	
+	hyphens: auto;
+}
 
 .Intro_Image {
 	flex: 20%;
@@ -435,7 +478,6 @@ p {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  /* border-style: solid; */
 }
 
 /* The vertical ruler */
@@ -456,7 +498,6 @@ p {
   position: relative;
   background-color: inherit;
   width: 60%;
-  /* border-style: solid; */
 }
 
 /* The circles on the timeline */
@@ -473,29 +514,10 @@ p {
 	z-index: 1;
 }
 
-/* Place the container to the left */
-.left {
-  left: -25%;
-}
-
 /* Place the container to the right */
 .right {
   /* left: 25%; If the vertical ruler is in the center */
   left: -20%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-	content: "";
-	height: 0;
-	position: absolute;
-	top: 10%;
-	width: 0;
-	z-index: 2;
-	right: calc(var(--bg-content-pad) - var(--arrow-wid));
-	border-style: solid;
-	border-width: var(--arrow-wid) 0 var(--arrow-wid) var(--arrow-wid);
-	border-color: transparent transparent transparent var(--timeline-bg);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -539,56 +561,90 @@ p {
 .res {
 	display: flex;
 	flex-direction: row;
+	background-color: #ffffff;
+	border: 1px solid var(--res-line);
+	border-radius: 18px;
+	overflow: hidden;
+	margin-bottom: 22px;
+	box-shadow: 0 1px 2px rgba(20,40,20,.06), 0 12px 30px rgba(20,40,20,.06);
+	transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.res:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 12px rgba(20,40,20,.10), 0 20px 45px rgba(20,40,20,.12);
 }
 
 .res_sub {
-	flex: 25%;
-	background-color: rgba(20,90,20,1);
-	font-family: 'Rubik', sans-serif;
-	padding: 10px 10px;
+	flex: 0 0 260px;
+	background: linear-gradient(155deg, var(--green-600), var(--green-900));
+	padding: 32px 20px;
 	position: relative;
-	font-size: 2.8rem;
-	font-weight: 400;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.15;
+	letter-spacing: -0.01em;
 	color: white;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .res_text {
-	font-family: 'Rubik', sans-serif;
 	font-size: 1.0rem;
-	font-weight: 100;
+	font-weight: 300;
 	text-align: justify;
-	flex: 70%;
-	padding: 10px 10px;
+	flex: 1;
+	padding: 30px 34px;
+}
+
+.res_text h3 {
+	font-weight: 600;
+	font-size: 1.25rem;
+	margin-top: 0;
 }
 
 .res-pub-but {
-  background-color: #f8f9fa;
-  border: 1px solid #f8f9fa;
-  border-radius: 4px;
-  color: #3c4043;
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  border: 1.5px solid var(--green-600);
+  border-radius: 999px;
+  color: var(--green-700);
   cursor: pointer;
-  font-family: arial,sans-serif;
-  font-size: 14px;
-  height: 36px;
-  line-height: 27px;
-  min-width: 54px;
-  padding: 0 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 8px 18px;
   text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: pre;
+  transition: background-color .18s ease, color .18s ease;
+}
+
+.res-pub-but::before {
+  content: "\25BE"; /* ▾ */
+  display: inline-block;
+  transition: transform .2s ease;
+}
+
+.res-pub-but.open::before {
+  transform: rotate(180deg);
 }
 
 .res-pub-but:hover {
-  border-color: #dadce0;
-  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
-  color: #202124;
+  background-color: var(--green-700);
+  color: #fff;
 }
 
 .res-pub-but:focus {
   outline: none;
+}
+
+.res-pub-but:focus-visible {
+  outline: 3px solid var(--green-500);
+  outline-offset: 2px;
 }
 
 /* END of: Research */
@@ -600,7 +656,53 @@ p {
     display: none;
     width: 100%;
     text-align: left;
-    font-family: 'Rubik', sans-serif;
+}
+
+#QM_list ol,
+#OM_list ol {
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+}
+
+#QM_list li,
+#OM_list li {
+    padding: 12px 0 12px 16px;
+    margin-bottom: 2px;
+    border-left: 2px solid #cdd6c9;
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: var(--res-ink-soft);
+    transition: border-left-color .18s ease;
+}
+
+#QM_list li:hover,
+#OM_list li:hover {
+    border-left-color: var(--green-500);
+}
+
+#QM_list a,
+#OM_list a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+#QM_list li:hover em,
+#OM_list li:hover em {
+    color: var(--green-700);
+}
+
+#QM_list em,
+#OM_list em {
+    color: #1c221c;
+    font-weight: 400;
+}
+
+#QM_list strong,
+#OM_list strong {
+    color: var(--green-600);
+    font-weight: 600;
 }
 
 strong {
@@ -623,7 +725,6 @@ strong {
 }
 
 .contact-item span {
-    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     color: black;
 }
@@ -690,14 +791,15 @@ strong {
         flex-wrap: wrap;
         justify-content: center;
         background-color: rgba(245, 245, 245, 0.97);
-        padding: 6px 0;
+        padding: 14px 0 6px;
         z-index: 100;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     }
 
     .sidenav_text {
-        font-size: 14px;
+        font-size: 17px;
         padding: 4px 8px;
+        color: rgba(95,10,95,1);
     }
 
     /* Remove the left margin that was reserved for the sidebar */
@@ -709,7 +811,7 @@ strong {
 
     /* Keep section headings clear of the sticky nav bar when scrolled to */
     .heading, #Introduction {
-        scroll-margin-top: 60px;
+        scroll-margin-top: 68px;
     }
 
     /* Crop the header image to a fixed height */
@@ -726,11 +828,12 @@ strong {
 
     /* Scale down the overlay text */
     .centered {
-        font-size: 1.8rem;
+        font-size: 1.98rem;
     }
 
+    /* Typewriter subtitle removed on mobile; heading alone fits better */
     .bottomed {
-        font-size: 0.85rem;
+        display: none;
     }
 
     /* Stack intro text and photo vertically; photo floats up first */
@@ -781,8 +884,8 @@ strong {
         left: 0;
     }
 
-    /* Stack research topic label and text vertically;
-       label (green box) always appears first regardless of DOM order */
+    /* Option C on mobile: green block becomes a full-width banner on top;
+       label always appears first regardless of DOM order */
     .res {
         flex-direction: column;
     }
@@ -794,6 +897,15 @@ strong {
 
     .res_sub {
         order: -1;
+        padding: 18px 26px;
+        font-size: 1.5rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .res_text {
+        padding: 24px 26px 28px;
     }
 
     /* Stack the two-column explanation buttons vertically */
@@ -810,6 +922,7 @@ strong {
     .paper-title {
         display: block;
         width: 100%;
+        font-weight: 500;
     }
 
     .paper-summary {
@@ -841,6 +954,10 @@ strong {
 
     .proposals-row .proposal-entry {
         margin-bottom: 1.2rem;
+    }
+
+    .proposal-toggle {
+        font-weight: 500;
     }
 
     /* Two rows: emails on row 1, others on row 2 */

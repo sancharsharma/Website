@@ -17,10 +17,12 @@ function PubShowHide(list_pubs, button_pubs) {
 
     if (publist.style.display == "") {
         publist.style.display = "block";
-        pubbutton.innerHTML = "Click to hide the publication list";
+        pubbutton.innerHTML = "Hide the publication list";
+        pubbutton.classList.add("open");
     } else {
         publist.style.display = "";
-        pubbutton.innerHTML = "Click to show relevant publications";
+        pubbutton.innerHTML = "Show relevant publications";
+        pubbutton.classList.remove("open");
     }
 }
 
