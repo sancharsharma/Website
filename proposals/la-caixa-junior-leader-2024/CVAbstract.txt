@@ -1,0 +1,13 @@
+My research has primarily focused on developing methods to manipulate magnons in the quantum domain. It combines techniques from magnonics (e.g., magnon mode calculations and coupling magnons to other systems) as well as quantum protocols (e.g., state generation and tomography).
+
+I have a strong background in hybrid systems involving magnons coupled to optical photons, which were central to my PhD research as discussed in "Main Attainments of the PhD project". Post PhD, I worked on computational studies of an optomagnonic crystal -- a periodic structure used to confine both magnons and photons. This confinement enhances magnon-photon overlap, resulting in a stronger coupling.
+
+Utilizing magnon-photon hybrid systems, I developed a protocol to perform quantum tomography (estimate the density matrix) of magnons. The protocol involves data analysis on photons inelastically scattered by magnons and applying the maximum likelihood principle to estimate the magnon's state. Applying this protocol to current experimental setups, I inferred that classical information can be efficiently extracted and extracting quantum information, although requiring some improvements, is within experimental reach.
+
+In addition to optics, I have researched hybrid systems comprising magnons and quantum electrodynamics (QED) setups involving microwaves and transmons. For a setup involving an anisotropic magnet, I developed a method to probabilistically collapse the magnetization to a cat state -- a superposition of two semi-classical magnetization states. In collaboration with Dr. Karenowska (Oxford), an experimentalist in quantum magnonics, we proposed an experimental implementation of this method.
+
+Building on this analysis, I developed a protocol to deterministically create any arbitrary quantum state of magnons. The protocol determines the shape of the input pulse to excite the transmon such that at the end of the pulse, the magnons settle into the desired state. A special case of this protocol was used to experimentally demonstrate a single magnon Fock state by Prof. You (Zhejiang University).
+
+Beyond magnetism, I have worked on quantum communication using optical fibers, particularly the application of quantum memories to extend the communication distance. Using microwave cavities as memories, I implemented a quantum error correction scheme as part of a communication protocol developed by the group of Prof. P van Loock (Mainz).
+
+I have an hindex of 11 (as indexed by Google Scholar), with four of my publications cited more than 50 times. Additionally, I received a Seal of Excellence for my proposal submitted to the Marie SkodowskaCurie Action.

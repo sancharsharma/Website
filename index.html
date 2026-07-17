@@ -318,9 +318,49 @@
 
             <!-- Proposals -->
             <h2 class="heading" id="Proposals">Proposals</h2>
-            <p>For researchers who are applying to funding proposals, I have uploaded my submissions and the review comments on my GitHub account as examples.</p>
-            <p>My proposal to Marie-Curie Postdoctoral Fellowship submitted in 2023 can be found <a href="https://github.com/sancharsharma/marie-curie-2023">here</a>.</p>
-            <p>My proposal to "la Caixa" Junior Leader fellowship submitted in 2024 can be found <a href="https://github.com/sancharsharma/la-caixa-junior-leader-2024">here</a>.</p>
+            <p>For researchers who are applying to funding proposals, I have uploaded my submissions and the review comments as examples. Click a proposal to see its files.</p>
+
+            <div class="proposals-row">
+            <div class="proposal-entry">
+                <button class="proposal-toggle" id="MC_btn" onclick="ProposalShowHide('MC_files', 'MC_btn')">
+                    <span>Marie-Curie Postdoctoral Fellowship (2023)</span>
+                    <span class="caret">&#9660;</span>
+                </button>
+                <ul class="proposal-files" id="MC_files">
+                    <li><a class="proposal-file" href="proposals/marie-curie-2023/Proposal.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-file-pdf-o"></i><span><span class="file-label">Full proposal</span> <span class="file-desc">&mdash; the submitted document (PDF)</span></span></a></li>
+                    <li><a class="proposal-file" href="proposals/marie-curie-2023/Evaluation.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-file-pdf-o"></i><span><span class="file-label">Reviewer comments</span> <span class="file-desc">&mdash; the evaluation report (PDF)</span></span></a></li>
+                    <li><div class="proposal-file gantt-row">
+                        <i class="fa fa-file-code-o"></i><span><span class="file-label">Gantt chart</span> <span class="file-desc">&mdash; reusable LaTeX source</span></span>
+                        <span class="gantt-actions">
+                            <a href="https://www.overleaf.com/docs?snip_uri=https%3A%2F%2Fsancharsharma.com%2Fproposals%2Fmarie-curie-2023%2FGantt.tex&snip_name=Gantt.tex" target="_blank" rel="noopener noreferrer">Open in Overleaf</a>
+                            <a href="proposals/marie-curie-2023/Gantt.tex" download>Download .tex</a>
+                        </span></div></li>
+                    <li class="download-all"><a class="proposal-file" href="proposals/marie-curie-2023.zip">
+                        <i class="fa fa-file-archive-o"></i><span><span class="file-label">Download all</span> <span class="file-desc">&mdash; everything as a .zip</span></span></a></li>
+                </ul>
+            </div>
+
+            <div class="proposal-entry">
+                <button class="proposal-toggle" id="LC_btn" onclick="ProposalShowHide('LC_files', 'LC_btn')">
+                    <span>"la Caixa" Junior Leader Fellowship (2024)</span>
+                    <span class="caret">&#9660;</span>
+                </button>
+                <ul class="proposal-files" id="LC_files">
+                    <li><a class="proposal-file" href="proposals/la-caixa-junior-leader-2024/SOP_Submission.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-file-pdf-o"></i><span><span class="file-label">Full proposal</span> <span class="file-desc">&mdash; the submitted document (PDF)</span></span></a></li>
+                    <li><a class="proposal-file" href="proposals/la-caixa-junior-leader-2024/ProjectAbstract.txt" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-file-text-o"></i><span><span class="file-label">Project abstract</span> <span class="file-desc">&mdash; written on the interface</span></span></a></li>
+                    <li><a class="proposal-file" href="proposals/la-caixa-junior-leader-2024/CVAbstract.txt" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-file-text-o"></i><span><span class="file-label">CV abstract</span> <span class="file-desc">&mdash; written on the interface</span></span></a></li>
+                    <li><a class="proposal-file" href="proposals/la-caixa-junior-leader-2024/QualitativeReport.txt" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-file-text-o"></i><span><span class="file-label">Qualitative report</span> <span class="file-desc">&mdash; reviewer feedback</span></span></a></li>
+                    <li class="download-all"><a class="proposal-file" href="proposals/la-caixa-junior-leader-2024.zip">
+                        <i class="fa fa-file-archive-o"></i><span><span class="file-label">Download all</span> <span class="file-desc">&mdash; everything as a .zip</span></span></a></li>
+                </ul>
+            </div>
+            </div>
 
             <!-- Vacancies -->
             <h2 class="heading" id="Vacancies">Vacancies</h2>

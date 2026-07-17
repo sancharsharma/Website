@@ -1,0 +1,152 @@
+\documentclass{standalone}
+
+\usepackage{pgfgantt,times}
+
+\begin{document}
+%\definecolor{barblue}{RGB}{153,204,254}
+%\definecolor{groupblue}{RGB}{51,102,254}
+%\definecolor{linkred}{RGB}{165,0,33}
+\definecolor{barblue}{RGB}{103,164,214}
+\definecolor{groupblue}{RGB}{21,52,184}
+\definecolor{linkred}{RGB}{165,0,33}
+\definecolor{milegreen}{RGB}{10,140,10}
+%\renewcommand\sfdefault{phv}
+%\renewcommand\mddefault{mc}
+%\renewcommand\bfdefault{bc}
+
+\sffamily
+\begin{ganttchart}[
+x unit=8mm,
+canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+hgrid style/.style={draw=black!5, line width=.75pt},
+vgrid={*1{draw=black!5, line width=.75pt}},
+title/.style={draw=none, fill=none},
+title label font=\bfseries\footnotesize,
+title label node/.append style={below=7pt},
+include title in canvas=false,
+bar/.append style={fill=barblue},
+bar incomplete/.append style={fill=barblue},
+bar progress label font=\mdseries\footnotesize\color{black!70},
+bar label node/.append style={align=left,text width=4.5cm},
+bar inline label node/.append style={below=1pt,anchor=center},
+bar label font=\mdseries\small\color{white},
+group incomplete/.append style={fill=groupblue},
+group/.append style={draw=none,fill=groupblue},
+group left shift=0,
+group right shift=0,
+group height=.5,
+group peaks tip position=0,
+group label node/.append style={align=left,text width=4.5cm},
+group inline label node/.append style={below=1pt,anchor=center},
+group label font=\small\color{white},
+group progress label font=\bfseries\small,
+link/.style={-latex, line width=1.5pt, linkred, rounded corners=1mm},
+link label font=\scriptsize\bfseries,
+link label node/.append style={below left=-2pt and 0pt},
+milestone/.append style={xscale=0.8,yscale=2,color=milegreen},
+milestone inline label node/.append style={anchor=north,above=4mm,fill=none,fill opacity=.75,text opacity=1,color=milegreen},
+milestone top shift=.15,
+]{1}{24}
+
+\gantttitlelist{1,...,24}{1} \\
+
+%\ganttgroup[inline]{WP-1: Bulk Transport Theory}{1}{10} 
+%\ganttgroup[inline]{WP-2: Magnetic Wire}{11}{17}
+%\ganttgroup[inline]{WP-3: Magnetic Thin Film}{18}{24} \\
+%
+%\ganttbar[name=WP1M1,inline]{\color{white} \textbf{M1.1}}{1}{2}
+%\ganttbar[name=WP2M1,inline]{\color{white} \textbf{M2.1}}{11}{13} 
+%\ganttbar[name=WP3M1,inline]{\color{white} \textbf{M2.1}}{18}{20} \\
+%
+%\ganttbar[name=WP1M2]{\textbf{M1.2} Keldysh Bulk}{3}{6} \\
+%\ganttbar[name=WP1M3]{\textbf{M1.3} Green's functions}{7}{10} \\
+%
+%
+%
+%\ganttbar[name=WP2M2]{\textbf{M2.2} Keldysh 1D}{14}{16} \\
+%\ganttbar[name=WP2M3]{\textbf{M2.3} Transfer Fidelity}{17}{17} \\
+%
+%
+%\ganttbar[name=WP3M2]{\textbf{M2.2} Keldysh 2D}{21}{23} \\
+%\ganttbar[name=WP3M3]{\textbf{M2.3} Transfer Fidelity}{24}{24} 
+
+\ganttgroup[inline]{\textbf{WP-1: Bulk Transport Theory}}{1}{10}  \\
+\ganttbar[name=WP1M1,inline]{\textbf{T1.1}}{1}{2}
+\ganttbar[name=WP1M2,inline]{\textbf{T1.2}}{3}{6}
+\ganttbar[name=WP1M3,inline]{\textbf{T1.3}}{7}{10} \\
+[grid]
+
+
+\ganttgroup[inline]{\textbf{WP-2: Magnetic Wire}}{11}{17} \\
+
+\ganttbar[name=WP2M1,inline]{\textbf{T2.1}}{11}{13}
+\ganttbar[name=WP2M2,inline]{\textbf{T2.2}}{14}{16}
+\ganttbar[name=WP2M3,inline]{\textbf{T2.3}}{17}{17}  \\
+[grid]
+
+\ganttgroup[inline]{\textbf{WP-3: Magnetic Thin Film}}{18}{24} \\
+
+\ganttbar[name=WP3M1,inline]{\textbf{T3.1}}{18}{20}
+\ganttbar[name=WP3M2,inline]{\textbf{T3.2}}{21}{23}
+\ganttbar[name=WP3M3,inline]{\textbf{T3.3}}{24}{24} \\
+[grid] \\
+
+\ganttbar[inline,bar/.append style={fill=gray,draw=none},bar height = 0.1]{}{0}{24}
+\newcommand{\boldify}[1]{\textbf{\textup{#1}}}
+\ganttmilestone[inline]{\boldify{M1}}{10} 
+\ganttmilestone[inline]{\boldify{M2}}{13} 
+\ganttmilestone[inline]{\boldify{M3}}{17}
+\ganttmilestone[inline]{\boldify{M4}}{20}
+\ganttmilestone[inline]{\boldify{M5}}{24}
+
+\newganttlinktype{rd}{
+	\ganttsetstartanchor{east}
+	\ganttsetendanchor{north}
+	\draw [/pgfgantt/link] (\xLeft,\yUpper) -- (\xRight,\yUpper) -- (\xRight,\yLower);
+}
+
+\newganttlinktype{dru}{
+	\ganttsetstartanchor{on bottom=0.75}
+	\ganttsetendanchor{on bottom=0.25}
+	\newcommand{\yval}{\ganttvalueof{y unit chart}}
+	\newcommand{\bul}{\ganttvalueof{link bulge}}
+	%\draw [/pgfgantt/link] ({\xLeft+0.2*\xval},\yUpper) -- ++(0,-0.4*\yval) -- ++(\xRight-\xLeft-0.2*\xval,0) -- ++(0,0.4*\yval);
+	\draw [/pgfgantt/link] (\xLeft,\yUpper) -- ++(0,-\yUpper+\yLower-\bul*\yval) -- ++(\xRight-\xLeft,0) -- ++(0,\bul*\yval);
+}
+
+
+\ganttlink[link type = dru]{WP1M1}{WP1M2}
+\ganttlink[link type = dru]{WP1M2}{WP1M3}
+
+\ganttlink[link type = dru]{WP1M2}{WP2M2}
+\ganttlink[link type = dru,link bulge=0.6]{WP2M1}{WP2M3}
+\ganttlink[link type = dru]{WP2M2}{WP2M3}
+
+\ganttlink[link type = dru]{WP1M2}{WP3M2}
+\ganttlink[link type = dru,link bulge=0.6]{WP3M1}{WP3M3}
+\ganttlink[link type = dru]{WP3M2}{WP3M3}
+
+
+%\ganttgroup{WP-1: Bulk Transport Theory}{1}{10} 
+%%\ganttmilestone[inline]{M1.1}{2}  \\
+%%\ganttbar[name=WP1M1]{\textbf{M1.1} Hamiltonian}{1}{2} \\
+%%\ganttbar[name=WP1M2]{\textbf{M1.2} Keldysh Bulk}{3}{6} \\
+%%\ganttbar[name=WP1M3]{\textbf{M1.3} Green's functions}{7}{10} \\
+%%[grid]
+%
+%
+%\ganttgroup{WP-2: Magnetic Wire}{11}{17} \\
+%
+%\ganttbar[name=WP2M1]{\textbf{M2.1} Coupling}{11}{13} \\
+%\ganttbar[name=WP2M2]{\textbf{M2.2} Keldysh 1D}{14}{16} \\
+%\ganttbar[name=WP2M3]{\textbf{M2.3} Transfer Fidelity}{17}{17} \\
+%[grid]
+%
+%\ganttgroup{WP-3: Magnetic Thin Film}{18}{24} \\
+%
+%\ganttbar[name=WP3M1]{\textbf{M2.1} Coupling}{18}{20} \\
+%\ganttbar[name=WP3M2]{\textbf{M2.2} Keldysh 2D}{21}{23} \\
+%\ganttbar[name=WP3M3]{\textbf{M2.3} Transfer Fidelity}{24}{24} 
+
+\end{ganttchart}
+\end{document}

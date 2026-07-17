@@ -28,6 +28,19 @@ function ToScroll(loc) {
     document.getElementById(loc).scrollIntoView();
 }
 
+function ProposalShowHide(files_id, button_id) {
+    var files = document.getElementById(files_id);
+    var button = document.getElementById(button_id);
+
+    if (files.style.display == "") {
+        files.style.display = "block";
+        button.classList.add("open");
+    } else {
+        files.style.display = "";
+        button.classList.remove("open");
+    }
+}
+
 function SummaryShowHide(summary, pap_title) {
     var summ = document.getElementById(summary);
 
