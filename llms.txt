@@ -10,14 +10,14 @@ Sanchar Sharma is a theorist working on the quantum dynamics of ferromagnets, wi
 
 Three research directions, each with a few representative papers. This is a curated selection, not a complete bibliography — for the full and continuously updated publication list, see the ORCID and Google Scholar profiles linked under Contact.
 
-### Magnons as Quantum Carriers
+### Magnons in the Middle
 
-Quantifies how well magnons can mediate quantum communication between units on a chip. Results include a scheme achieving high-purity entanglement through a magnon channel despite weak coupling, and, with P. van Loock and collaborators, bosonic quantum error correction in microwave cavities for quantum repeaters. His most recent work (2026) is in this direction.
+Quantifies how well magnons can mediate quantum communication between units on a chip. Results include a scheme achieving high-purity entanglement through a magnon channel despite weak coupling, and a proposal for magnon-mediated quantum gates between superconducting qubits. His most recent work (2026) is in this direction.
 
 - [High-purity entanglement mediated by magnons despite weak coupling](https://arxiv.org/abs/2607.19533) — Sanchar Sharma, arXiv preprint (2026)
-- [Bosonic quantum error correction with microwave cavities for quantum repeaters](https://doi.org/10.1103/hkvx-rks6) — S Siddardha Chelluri, Sanchar Sharma, F Schmidt, S Viola Kusminskiy, P van Loock, Phys. Rev. A (2026)
+- [Magnon-mediated quantum gates for superconducting qubits](https://doi.org/10.1103/PhysRevB.110.104416) — M Dols, Sanchar Sharma, L Bechara, YM Blanter, M Kounalakis, S Viola Kusminskiy, Phys. Rev. B (2024)
 
-### Quantum Magnonics
+### Taming Magnons
 
 Derives measurement theory and state-preparation protocols intended to be experimentally feasible. Contributions include a method for reconstructing the quantum state of magnons from the photon statistics of Brillouin light scattering, together with the reconstruction algorithm; an algorithm giving the explicit sequence of operations that prepares an arbitrary magnon state in cavity magnonics; and the proposal of spin cat states in ferromagnetic insulators.
 
