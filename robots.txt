@@ -41,4 +41,6 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-Sitemap: https://sancharsharma.com/sitemap.xml
+# No Sitemap: line. The site is a single page, and everything worth crawling
+# (the proposal PDFs included) is linked from it, so a sitemap would add nothing.
+# A structured summary for LLMs lives at https://sancharsharma.com/llms.txt

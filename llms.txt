@@ -4,26 +4,34 @@
 
 ## About
 
-Sanchar Sharma studies the quantum dynamics of ferromagnets, with the long-term goal of harnessing magnons — quasiparticles of spin waves in ferromagnets — for quantum applications such as interconnects, transduction between microwave and optical frequencies, and logic operations. His theoretical work spans magnon-microwave and magnon-photon interactions, quantum state generation and tomography of magnons, cavity optomagnonic coupling, and the quantum properties of magnetic skyrmions.
+Sanchar Sharma is a theorist working on the quantum dynamics of ferromagnets, with the long-term goal of harnessing magnons for quantum applications such as interconnects, transduction between microwave and optical frequencies, and logic operations. His work spans magnon-microwave and magnon-photon interactions, magnon-mediated entanglement and quantum communication, quantum state generation and tomography of magnons, and cavity optomagnonic coupling.
 
-## Research Areas
+## Research
 
-- **Quantum Magnonics**: non-classical states of magnons (spin cat states, Fock states, superpositions), quantum sensing of magnons using Brillouin light scattering, magnon-mediated quantum gates for superconducting qubits, cavity magnonics
-- **Cavity Opto-magnonics**: magnon-photon coupling, microwave-to-optical transduction, optomagnonic crystals, optical cooling of magnons, light scattering by magnons in whispering gallery mode cavities
-- **Quantum Skyrmions**: optical signatures of quantum magnetic skyrmions, quantization of the helicity mode
+Three research directions, each with a few representative papers. This is a curated selection, not a complete bibliography — for the full and continuously updated publication list, see the ORCID and Google Scholar profiles linked under Contact.
 
-## Selected Publications
+### Magnons as Quantum Carriers
 
-- [Optical Signatures of Quantum Skyrmions](https://doi.org/10.1103/5c9q-nsb4) — Sanchar Sharma, Christina Psaroudaki, Phys. Rev. Lett. (2026)
-- [Cavity-Enhanced Optical Manipulation of Antiferromagnetic Magnon-Pairs](https://arxiv.org/abs/2506.16877) — TS Parvini, ALE Römling, Sanchar Sharma, S Viola Kusminskiy, Phys. Rev. B (2025)
-- [Magnon-mediated quantum gates for superconducting qubits](https://arxiv.org/abs/2311.10152) — M Dols, Sanchar Sharma, L Bechara, YM Blanter, M Kounalakis, S Viola Kusminskiy, Phys. Rev. B (2024)
+Quantifies how well magnons can mediate quantum communication between units on a chip. Results include a scheme achieving high-purity entanglement through a magnon channel despite weak coupling, and, with P. van Loock and collaborators, bosonic quantum error correction in microwave cavities for quantum repeaters. His most recent work (2026) is in this direction.
+
+- [High-purity entanglement mediated by magnons despite weak coupling](https://arxiv.org/abs/2607.19533) — Sanchar Sharma, arXiv preprint (2026)
+- [Bosonic quantum error correction with microwave cavities for quantum repeaters](https://doi.org/10.1103/hkvx-rks6) — S Siddardha Chelluri, Sanchar Sharma, F Schmidt, S Viola Kusminskiy, P van Loock, Phys. Rev. A (2026)
+
+### Quantum Magnonics
+
+Derives measurement theory and state-preparation protocols intended to be experimentally feasible. Contributions include a method for reconstructing the quantum state of magnons from the photon statistics of Brillouin light scattering, together with the reconstruction algorithm; an algorithm giving the explicit sequence of operations that prepares an arbitrary magnon state in cavity magnonics; and the proposal of spin cat states in ferromagnetic insulators.
+
 - [Quantum tomography of magnons using Brillouin light scattering](https://doi.org/10.1103/PhysRevB.110.014416) — Sanchar Sharma, S Viola Kusminskiy, VASV Bittencourt, Phys. Rev. B (2024)
 - [Protocol for generating an arbitrary quantum state of the magnetization in cavity magnonics](https://doi.org/10.1088/2515-7639/ac81f0) — Sanchar Sharma, VASV Bittencourt, S Viola Kusminskiy, Journal of Physics: Materials (2022)
-- [Spin cat states in ferromagnetic insulators](https://arxiv.org/abs/2105.00017) — Sanchar Sharma, VASV Bittencourt, AD Karenowska, S Viola Kusminskiy, Phys. Rev. B: Letters (2021)
-- [Design of an optomagnonic crystal: Towards optimal magnon-photon mode matching at the microscale](https://arxiv.org/abs/2107.06638) — J Graf, Sanchar Sharma, H Hübl, S Viola Kusminskiy, Phys. Rev. Res. (2021)
-- [Optimal mode matching in cavity optomagnonics](https://arxiv.org/abs/2001.04720) — Sanchar Sharma, BZ Rameshti, YM Blanter, GEW Bauer, Phys. Rev. B (2020)
-- [Optical cooling of magnons](https://arxiv.org/abs/1804.00807) — Sanchar Sharma, YM Blanter, GEW Bauer, Phys. Rev. Letters (2018)
-- [Light scattering by magnons in whispering gallery mode cavities](https://arxiv.org/abs/1706.02499) — Sanchar Sharma, YM Blanter, GEW Bauer, Phys. Rev. B (2017)
+- [Spin cat states in ferromagnetic insulators](https://doi.org/10.1103/PhysRevB.103.L100403) — Sanchar Sharma, VASV Bittencourt, AD Karenowska, S Viola Kusminskiy, Phys. Rev. B: Letters (2021)
+
+### When Magnon met Photon — Cavity Optomagnonics
+
+Microscopic theory of magnon-photon coupling and how to enhance it with cavities. Contributions include the theory of light scattering by magnons in whispering-gallery-mode cavities, a proposal for optical cooling of magnons, optimal mode matching and optomagnonic crystal design, and optical signatures that distinguish a quantum from a classical skyrmion.
+
+- [Optical Signatures of Quantum Skyrmions](https://doi.org/10.1103/5c9q-nsb4) — Sanchar Sharma, Christina Psaroudaki, Phys. Rev. Lett. (2026)
+- [Optical cooling of magnons](https://doi.org/10.1103/PhysRevLett.121.087205) — Sanchar Sharma, YM Blanter, GEW Bauer, Phys. Rev. Letters (2018)
+- [Light scattering by magnons in whispering gallery mode cavities](https://doi.org/10.1103/PhysRevB.96.094412) — Sanchar Sharma, YM Blanter, GEW Bauer, Phys. Rev. B (2017)
 
 ## Background
 
@@ -34,10 +42,16 @@ Sanchar Sharma studies the quantum dynamics of ferromagnets, with the long-term 
 - PhD in Applied Physics — Delft University of Technology (TU Delft), Delft, Netherlands (Aug 2015 – Aug 2019)
 - B.Tech + M.Tech — Indian Institute of Technology Bombay (IIT-B), Mumbai, India (Aug 2010 – Jun 2015)
 
+## Plain-Language Explanations
+
+Undergraduate-level explanations of the research, published on the website: what magnons are; why quantum magnonics is promising; measuring magnons using light (quantum tomography via Brillouin light scattering); generating an arbitrary quantum state of magnons; and how to observe quantum skyrmions in magnets.
+
 ## Publicly Available Funding Proposals
 
-- [Marie-Curie Postdoctoral Fellowship (2023)](https://github.com/sancharsharma/marie-curie-2023) — full submission with review comments
-- ["la Caixa" Junior Leader Fellowship (2024)](https://github.com/sancharsharma/la-caixa-junior-leader-2024) — full submission with review comments
+Full submissions with reviewer comments, hosted directly on the website as examples for other researchers.
+
+- Marie-Curie Postdoctoral Fellowship (2023) — [full proposal](https://sancharsharma.com/proposals/marie-curie-2023/Proposal.pdf), [reviewer comments](https://sancharsharma.com/proposals/marie-curie-2023/Evaluation.pdf), [Gantt chart LaTeX source](https://sancharsharma.com/proposals/marie-curie-2023/Gantt.tex), [all files as .zip](https://sancharsharma.com/proposals/marie-curie-2023.zip)
+- "la Caixa" Junior Leader Fellowship (2024) — [full proposal](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/SOP_Submission.pdf), [project abstract](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/ProjectAbstract.txt), [CV abstract](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/CVAbstract.txt), [qualitative report](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/QualitativeReport.txt), [all files as .zip](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024.zip)
 
 ## Contact
 
