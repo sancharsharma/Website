@@ -1,5 +1,5 @@
 (function () {
-    var text = 'I am a physicist interested in quantum magnonics';
+    var text = 'Magnets do more than stick to your fridge';
     var el = document.getElementById('typewriter-text');
     var i = 0;
     setTimeout(function () {
