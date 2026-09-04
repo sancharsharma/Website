@@ -36,6 +36,7 @@ Microscopic theory of magnon-photon coupling and how to enhance it with cavities
 ## Background
 
 - "la Caixa" Junior Group Leader — IFIMAC, Universidad Autónoma de Madrid, Madrid, Spain (Sep 2025 – present)
+- Visiting Researcher — Utrecht University, Utrecht, Netherlands (May 2026 – Nov 2026)
 - Postdoctoral Researcher — Laboratoire de Physique de l'École Normale Supérieure (LPENS), Paris, France (Apr 2024 – Aug 2025)
 - Postdoctoral Researcher — RWTH Aachen, Aachen, Germany (Jan 2023 – Mar 2024)
 - Postdoctoral Researcher — Max Planck Institute for the Science of Light (MPL), Erlangen, Germany (Nov 2019 – Dec 2022)
@@ -50,8 +51,8 @@ Undergraduate-level explanations of the research, published on the website: what
 
 Full submissions with reviewer comments, hosted directly on the website as examples for other researchers.
 
-- Marie-Curie Postdoctoral Fellowship (2023) — [full proposal](https://sancharsharma.com/proposals/marie-curie-2023/Proposal.pdf), [reviewer comments](https://sancharsharma.com/proposals/marie-curie-2023/Evaluation.pdf), [Gantt chart LaTeX source](https://sancharsharma.com/proposals/marie-curie-2023/Gantt.tex), [all files as .zip](https://sancharsharma.com/proposals/marie-curie-2023.zip)
-- "la Caixa" Junior Leader Fellowship (2024) — [full proposal](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/SOP_Submission.pdf), [project abstract](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/ProjectAbstract.txt), [CV abstract](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/CVAbstract.txt), [qualitative report](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/QualitativeReport.txt), [all files as .zip](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024.zip)
+- Marie-Curie Postdoctoral Fellowship (2023) — not funded, but awarded a Seal of Excellence. [full proposal](https://sancharsharma.com/proposals/marie-curie-2023/Proposal.pdf), [reviewer comments](https://sancharsharma.com/proposals/marie-curie-2023/Evaluation.pdf), [Gantt chart LaTeX source](https://sancharsharma.com/proposals/marie-curie-2023/Gantt.tex), [all files as .zip](https://sancharsharma.com/proposals/marie-curie-2023.zip)
+- "la Caixa" Junior Leader Fellowship (2024) — awarded in 2025; funds the current position at IFIMAC. [full proposal](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/SOP_Submission.pdf), [project abstract](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/ProjectAbstract.txt), [CV abstract](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/CVAbstract.txt), [qualitative report](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024/QualitativeReport.txt), [all files as .zip](https://sancharsharma.com/proposals/la-caixa-junior-leader-2024.zip)
 
 ## Contact
 

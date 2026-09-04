@@ -227,6 +227,31 @@ a:hover {
 	transform: rotate(180deg);
 }
 
+/* Outcome badges on the proposal toggles */
+
+.outcome {
+	display: block;
+	width: fit-content;
+	margin-top: 0.45rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 0.68rem;
+	font-weight: 600;
+	white-space: nowrap;
+	padding: 0.22rem 0.55rem;
+	border-radius: 6px;
+}
+
+.outcome-funded {
+	color: var(--green-700);
+	background-color: rgba(80, 180, 130, 0.18);
+}
+
+.outcome-seal {
+	color: #8a5a00;
+	background-color: rgba(214, 158, 46, 0.20);
+}
+
 .proposal-files {
 	display: none;
 	margin: 0.6rem 0 0 0;
@@ -240,6 +265,13 @@ a:hover {
 
 .proposal-files li + li {
 	border-top: 1px solid var(--card-divider);
+}
+
+.proposal-note {
+	padding: 0.65rem 0.8rem 0.8rem;
+	font-size: 0.9rem;
+	line-height: 1.45;
+	color: var(--res-ink-soft);
 }
 
 .proposal-file {
